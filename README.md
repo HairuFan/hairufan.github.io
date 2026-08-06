@@ -4,6 +4,7 @@ Personal academic website published with GitHub Pages.
 
 - Website: https://hairufan.github.io/
 - Publications page: https://hairufan.github.io/publications.html
+- Online CV: https://hairufan.github.io/resume.html
 - Publication data: `publications.json`
 
 ## Update a publication
@@ -15,7 +16,7 @@ Personal academic website published with GitHub Pages.
 5. Update the top-level `lastUpdated` date using `YYYY-MM-DD`.
 6. Commit the change. GitHub Pages will rebuild the public website automatically.
 
-Direct edit link after this feature is merged:
+Direct edit link:
 
 https://github.com/HairuFan/hairufan.github.io/edit/main/publications.json
 
@@ -39,5 +40,5 @@ The publications page automatically provides search, category filters, publicati
 - `index.html`: academic homepage
 - `publications.html`: interactive publication archive
 - `publications.json`: editable publication records
-- `HairuFan_Resume.pdf`: CV/resume PDF
+- `resume.html`: current web-based CV with print/save-as-PDF support
 - `JSM2025_Slides.pdf`: presentation slides
