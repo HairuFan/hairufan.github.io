@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shareable publication profile for Hairu Fan, featuring research in statistics, responsible AI, algorithmic fairness, and information systems.">
+  <meta name="robots" content="index,follow">
+  <title>Hairu Fan | Publications Profile</title>
+  <style>
+    :root{
+      --ink:#172033;
+      --muted:#5d687b;
+      --line:#dfe5ee;
+      --paper:#ffffff;
+      --wash:#f5f7fb;
+      --accent:#3157d5;
+      --accent-dark:#2444ad;
+      --soft:#edf1ff;
+      --radius:18px;
+      --shadow:0 18px 50px rgba(28,39,65,.08);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;color:var(--ink);background:var(--wash);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+    a{color:var(--accent)}
+    a:hover{color:var(--accent-dark)}
+    .shell{width:min(1080px,calc(100% - 32px));margin:0 auto}
+    .hero{padding:82px 0 40px}
+    .identity{display:flex;align-items:center;gap:18px}
+    .monogram{display:grid;width:70px;height:70px;place-items:center;border-radius:20px;background:linear-gradient(145deg,#3157d5,#7892ee);color:#fff;font-size:1.4rem;font-weight:830;letter-spacing:-.04em;box-shadow:var(--shadow)}
+    .eyebrow{margin:0 0 6px;color:var(--accent);font-size:.78rem;font-weight:820;letter-spacing:.13em;text-transform:uppercase}
+    h1{margin:0;font-size:clamp(2.4rem,7vw,4.8rem);line-height:1;letter-spacing:-.055em}
+    .intro{max-width:760px;margin:24px 0 0;color:var(--muted);font-size:clamp(1rem,2vw,1.16rem)}
+    .research-areas{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+    .research-areas span{padding:8px 11px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--muted);font-size:.82rem;font-weight:700}
+    .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:34px}
+    .stat{padding:18px 20px;border:1px solid var(--line);border-radius:var(--radius);background:rgba(255,255,255,.78)}
+    .stat strong{display:block;font-size:1.7rem;line-height:1}
+    .stat span{display:block;margin-top:7px;color:var(--muted);font-size:.85rem}
+    .toolbar{display:grid;grid-template-columns:minmax(220px,1fr) auto;gap:16px;align-items:center;margin:24px 0;padding:16px;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);box-shadow:var(--shadow)}
+    .search{width:100%;min-height:46px;padding:0 15px;border:1px solid var(--line);border-radius:12px;background:#fbfcfe;font:inherit}
+    .filters{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}
+    .filter{min-height:38px;padding:0 13px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--muted);font:inherit;font-size:.84rem;font-weight:700;cursor:pointer}
+    .filter.active{border-color:var(--accent);background:var(--soft);color:var(--accent-dark)}
+    .results-meta{display:flex;justify-content:space-between;gap:16px;margin:18px 2px;color:var(--muted);font-size:.88rem}
+    .publication-list{display:grid;gap:16px;padding-bottom:74px}
+    .publication{padding:24px;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);box-shadow:0 9px 30px rgba(28,39,65,.045)}
+    .topline{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:11px}
+    .tag{display:inline-flex;align-items:center;min-height:27px;padding:0 10px;border-radius:999px;background:#eff2f7;color:#4e5a6f;font-size:.74rem;font-weight:790}
+    .year{margin-left:auto;color:var(--muted);font-size:.85rem;font-weight:750}
+    .publication h2{margin:0;font-size:clamp(1.16rem,2.4vw,1.42rem);line-height:1.32}
+    .authors{margin:11px 0 0;font-weight:680}
+    .venue{margin:3px 0 0;color:var(--muted)}
+    .publication-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+    .small-action{display:inline-flex;align-items:center;justify-content:center;min-height:37px;padding:0 12px;border:1px solid var(--line);border-radius:10px;background:#fbfcfe;color:var(--ink);font:inherit;font-size:.82rem;font-weight:720;text-decoration:none;cursor:pointer}
+    .small-action:hover{border-color:#bfc9d9;color:var(--ink)}
+    details{margin-top:14px;border-top:1px solid var(--line);padding-top:13px}
+    summary{color:var(--muted);font-size:.84rem;font-weight:720;cursor:pointer}
+    pre{overflow-x:auto;margin:12px 0 0;padding:14px;border-radius:12px;background:#151b29;color:#eaf0ff;font:0.78rem/1.55 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;white-space:pre-wrap}
+    .empty{padding:30px;border:1px dashed #bdc8d9;border-radius:var(--radius);background:var(--paper);color:var(--muted);text-align:center}
+    .site-footer{padding:30px 0 46px;border-top:1px solid var(--line);color:var(--muted);font-size:.86rem}
+    .footer-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+    .toast{position:fixed;right:20px;bottom:20px;transform:translateY(20px);padding:11px 15px;border-radius:10px;background:#172033;color:#fff;font-size:.86rem;opacity:0;pointer-events:none;transition:180ms}
+    .toast.show{transform:translateY(0);opacity:1}
+    @media(max-width:760px){.stats{grid-template-columns:1fr}.toolbar{grid-template-columns:1fr}.filters{justify-content:flex-start}.publication{padding:20px}}
+    @media(max-width:480px){.shell{width:min(100% - 22px,1080px)}.year{width:100%;margin-left:0}.identity{align-items:flex-start}.monogram{width:58px;height:58px;border-radius:16px}}
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero shell">
+      <div class="identity">
+        <div class="monogram" aria-hidden="true">HF</div>
+        <div>
+          <p class="eyebrow">Publication Profile</p>
+          <h1>Hairu Fan</h1>
+        </div>
+      </div>
+      <p class="intro">Research in statistics, responsible AI, algorithmic fairness, human–AI decision systems, and information systems.</p>
+      <div class="research-areas" aria-label="Research areas">
+        <span>Statistics</span>
+        <span>Responsible AI</span>
+        <span>Algorithmic Fairness</span>
+        <span>Human–AI Systems</span>
+        <span>Information Systems</span>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong id="total-count">—</strong><span>Total items</span></div>
+        <div class="stat"><strong id="published-count">—</strong><span>Published</span></div>
+        <div class="stat"><strong id="active-count">—</strong><span>In press or preprint</span></div>
+      </div>
+    </section>
+
+    <section class="shell">
+      <div class="toolbar">
+        <input class="search" id="search" type="search" placeholder="Search title, author, venue, or topic…" aria-label="Search publications">
+        <div class="filters" id="filters"></div>
+      </div>
+      <div class="results-meta"><span id="results-count">Loading publications…</span><span id="updated-date"></span></div>
+      <div class="publication-list" id="publication-list" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-row"><span>© <span id="current-year"></span> Hairu Fan</span><span>Publication data updated from a shared research record.</span></div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const state={publications:[],activeType:'All',query:''};
+    const list=document.getElementById('publication-list');
+    const filters=document.getElementById('filters');
+    const toast=document.getElementById('toast');
+    document.getElementById('current-year').textContent=new Date().getFullYear();
+
+    function showToast(message){toast.textContent=message;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),1500)}
+    async function copyText(text,label){try{await navigator.clipboard.writeText(text);showToast(label+' copied')}catch{showToast('Copy failed')}}
+    function slug(value){return value.toLowerCase().replace(/\s+/g,'-')}
+    function renderFilters(){const types=['All',...new Set(state.publications.map(p=>p.type))];filters.innerHTML='';types.forEach(type=>{const button=document.createElement('button');button.className='filter'+(type===state.activeType?' active':'');button.textContent=type;button.onclick=()=>{state.activeType=type;renderFilters();render()};filters.appendChild(button)})}
+    function filtered(){const q=state.query.trim().toLowerCase();return state.publications.filter(p=>{const typeOK=state.activeType==='All'||p.type===state.activeType;const text=[p.title,p.authors,p.venue,p.type,p.status,p.year].join(' ').toLowerCase();return typeOK&&(!q||text.includes(q))})}
+    function render(){const items=filtered();document.getElementById('results-count').textContent=`Showing ${items.length} of ${state.publications.length} items`;list.innerHTML='';if(!items.length){list.innerHTML='<div class="empty">No publications match the current search or filter.</div>';return}items.forEach(p=>{const card=document.createElement('article');card.className='publication';card.innerHTML=`<div class="topline"><span class="tag">${p.type}</span><span class="tag ${slug(p.status)}">${p.status}</span><span class="year">${p.year}</span></div><h2>${p.title}</h2><p class="authors">${p.authors}</p><p class="venue">${p.venue}</p><div class="publication-actions"><a class="small-action" href="${p.url}" target="_blank" rel="noopener">${p.linkLabel||'Open paper'}</a><button class="small-action copy-apa">Copy APA</button><button class="small-action copy-bib">Copy BibTeX</button></div><details><summary>View BibTeX</summary><pre></pre></details>`;card.querySelector('pre').textContent=p.bibtex;card.querySelector('.copy-apa').onclick=()=>copyText(p.apa,'APA citation');card.querySelector('.copy-bib').onclick=()=>copyText(p.bibtex,'BibTeX');list.appendChild(card)})}
+    document.getElementById('search').addEventListener('input',e=>{state.query=e.target.value;render()});
+
+    fetch('publications.json').then(r=>{if(!r.ok)throw new Error('Unable to load publication data');return r.json()}).then(data=>{state.publications=data.publications||[];document.getElementById('updated-date').textContent=data.lastUpdated?`Updated ${data.lastUpdated}`:'';document.getElementById('total-count').textContent=state.publications.length;document.getElementById('published-count').textContent=state.publications.filter(p=>p.status==='Published').length;document.getElementById('active-count').textContent=state.publications.filter(p=>p.status!=='Published').length;renderFilters();render()}).catch(error=>{list.innerHTML=`<div class="empty">${error.message}</div>`});
+  </script>
+</body>
+</html>
