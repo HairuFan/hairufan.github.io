@@ -2,75 +2,440 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hairu Fan | Statistics PhD Student | JSM 2025</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Academic website of Hairu Fan, a Ph.D. student in Statistics and Analytics at Central Michigan University.">
+  <title>Hairu Fan | Statistics & Analytics</title>
   <style>
+    :root {
+      --ink: #172033;
+      --muted: #5d687b;
+      --line: #dfe5ee;
+      --paper: #ffffff;
+      --wash: #f5f7fb;
+      --accent: #3157d5;
+      --accent-dark: #2444ad;
+      --soft-accent: #edf1ff;
+      --radius: 18px;
+      --shadow: 0 18px 50px rgba(28, 39, 65, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
+      margin: 0;
+      color: var(--ink);
+      background: var(--wash);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
     }
-    h1 {
-      color: #333;
+
+    a { color: var(--accent); }
+    a:hover { color: var(--accent-dark); }
+
+    .shell {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
     }
-    a {
-      color: #007acc;
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.9);
+      border-bottom: 1px solid rgba(223, 229, 238, 0.9);
+      backdrop-filter: blur(12px);
+    }
+
+    .nav {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      color: var(--ink);
+      font-size: 1.05rem;
+      font-weight: 780;
+      letter-spacing: -0.01em;
       text-decoration: none;
     }
-    a:hover {
-      text-decoration: underline;
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 0.94rem;
     }
+
+    .nav-links a {
+      color: var(--muted);
+      font-weight: 680;
+      text-decoration: none;
+    }
+
+    .nav-links a[aria-current="page"] { color: var(--accent); }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(250px, 0.55fr);
+      gap: 48px;
+      align-items: center;
+      min-height: 550px;
+      padding: 70px 0;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 820;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(3rem, 8vw, 5.7rem);
+      line-height: 0.96;
+      letter-spacing: -0.065em;
+    }
+
+    .hero-copy {
+      max-width: 710px;
+      margin: 24px 0 0;
+      color: var(--muted);
+      font-size: clamp(1.04rem, 2vw, 1.22rem);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 11px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 45px;
+      padding: 0 17px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--paper);
+      color: var(--ink);
+      font-size: 0.9rem;
+      font-weight: 740;
+      text-decoration: none;
+    }
+
+    .button.primary {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: white;
+    }
+
+    .button.primary:hover {
+      border-color: var(--accent-dark);
+      background: var(--accent-dark);
+      color: white;
+    }
+
+    .profile-card {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+
+    .monogram {
+      display: grid;
+      width: 86px;
+      height: 86px;
+      place-items: center;
+      border-radius: 24px;
+      background: linear-gradient(145deg, #3157d5, #7892ee);
+      color: white;
+      font-size: 1.75rem;
+      font-weight: 830;
+      letter-spacing: -0.04em;
+    }
+
+    .profile-card h2 {
+      margin: 20px 0 3px;
+      font-size: 1.15rem;
+    }
+
+    .profile-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.91rem;
+    }
+
+    .profile-links {
+      display: grid;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .profile-links a {
+      padding: 10px 12px;
+      border-radius: 10px;
+      background: var(--wash);
+      color: var(--ink);
+      font-size: 0.86rem;
+      font-weight: 680;
+      text-decoration: none;
+    }
+
     .section {
+      padding: 70px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-heading {
+      display: grid;
+      grid-template-columns: minmax(180px, 0.4fr) minmax(0, 1fr);
+      gap: 42px;
+      align-items: start;
       margin-bottom: 30px;
+    }
+
+    .section h2 {
+      margin: 0;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+    }
+
+    .section-lead {
+      max-width: 720px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      min-height: 190px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper);
+    }
+
+    .card .number {
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 820;
+      letter-spacing: 0.1em;
+    }
+
+    .card h3 {
+      margin: 28px 0 8px;
+      font-size: 1.08rem;
+      line-height: 1.3;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .feature {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 28px;
+      align-items: center;
+      padding: 28px;
+      border: 1px solid #cfd8ee;
+      border-radius: 24px;
+      background: linear-gradient(145deg, #ffffff, #edf1ff);
+      box-shadow: var(--shadow);
+    }
+
+    .feature h3 {
+      margin: 0 0 7px;
+      font-size: 1.35rem;
+      letter-spacing: -0.02em;
+    }
+
+    .feature p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .resources {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 15px;
+    }
+
+    .resource {
+      display: flex;
+      min-height: 115px;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 21px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper);
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .resource strong { font-size: 1.04rem; }
+    .resource span { color: var(--muted); font-size: 0.86rem; }
+
+    .site-footer {
+      padding: 30px 0 46px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+
+    .footer-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    @media (max-width: 820px) {
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .profile-card { max-width: 470px; }
+      .section-heading { grid-template-columns: 1fr; gap: 16px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 600px) {
+      .shell { width: min(100% - 22px, 1080px); }
+      .hero { padding: 55px 0; gap: 32px; }
+      .feature { grid-template-columns: 1fr; }
+      .resources { grid-template-columns: 1fr; }
+      .nav-links { gap: 13px; font-size: 0.86rem; }
     }
   </style>
 </head>
 <body>
+  <header class="site-header">
+    <div class="shell nav">
+      <a class="brand" href="index.html">Hairu Fan</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="HairuFan_Resume.pdf" target="_blank" rel="noopener">CV</a>
+      </nav>
+    </div>
+  </header>
 
-  <h1>Hairu Fan</h1>
-  <p>Ph.D. Student in Statistics & Analytics<br>
-     Central Michigan University</p>
+  <main>
+    <section class="hero shell">
+      <div>
+        <p class="eyebrow">Statistics · Responsible AI · Information Systems</p>
+        <h1>Hairu Fan</h1>
+        <p class="hero-copy">Ph.D. student in Statistics & Analytics at Central Michigan University. My research focuses on statistical methods, algorithmic fairness, human–AI decision systems, and data-informed research.</p>
+        <div class="actions">
+          <a class="button primary" href="publications.html">View publications</a>
+          <a class="button" href="HairuFan_Resume.pdf" target="_blank" rel="noopener">Download CV</a>
+          <a class="button" href="mailto:fan2h@cmich.edu">Email me</a>
+        </div>
+      </div>
 
-  <div class="section">
-    <h2>🌟 JSM 2025 Presentation</h2>
-    <p><strong>Title:</strong> From Bias to Balance: A Data-Driven Approach to Fair Recruitment Practices<br>
-       <strong>Time:</strong> August 5, 2025 – 2:00 PM<br>
-       <strong>Location:</strong> Nashville, TN</p>
-    <p><a href="JSM2025_Slides.pdf" target="_blank">🔗 View Slides (PDF)</a></p>
-  </div>
+      <aside class="profile-card" aria-label="Profile summary">
+        <div class="monogram" aria-hidden="true">HF</div>
+        <h2>Hairu Fan</h2>
+        <p>Ph.D. Student<br>Statistics & Analytics<br>Central Michigan University</p>
+        <div class="profile-links">
+          <a href="publications.html">Publication archive →</a>
+          <a href="https://www.linkedin.com/in/hairu-fan-383791265/" target="_blank" rel="noopener">LinkedIn →</a>
+          <a href="https://github.com/HairuFan" target="_blank" rel="noopener">GitHub →</a>
+        </div>
+      </aside>
+    </section>
 
-  <div class="section">
-    <h2>📄 Resume </h2>
-    <ul>
-      <li><a href="HairuFan_Resume.pdf" target="_blank">📎 Download My Resume</a></li>
-    </ul>
-  </div>
-  <div class="section">
-    <h2>📄 Peer Reviewer Experience</h2>
-    <p><strong>Conference:</strong> <a href="https://hicss.hawaii.edu" target="_blank">The 59th Hawaii International Conference on System Sciences (HICSS)</a><br>
-       <strong>Role:</strong> Peer Reviewer – SJ Minitrack: AI and Digital Discrimination<br>
-       <strong>Dates:</strong> Jul 2025 – Present</p>
-  </div>
-  <div class="section">
-    <h2>🔗 Connect with Me</h2>
-    <ul>
-      <li><a href="mailto:fan2h@cmich.edu">📧 Email</a></li>
-      <li><a href="https://www.linkedin.com/in/hairu-fan-383791265/" target="_blank">💼 LinkedIn</a></li>
-    </ul>
-  </div>
-  <div class="section">
-  <h2>📚 Research & Publications</h2>
-  <ul>
-    <li><strong>Presenter</strong>, “From Bias to Balance: A Data-Driven Approach to Fair Recruitment Practices”, College of Education and Human Services Symposium, Central Michigan University, February 2025.</li>
-    <li><strong>Work-in-Progress</strong>, Federal Reserve Rate Cuts and Stock Mutual Fund Returns: A Study on Growth vs. Value Funds and Risk-Adjusted Performance, with Dr. Min Shu.</li>
-    <li><strong>Work-in-Progress</strong>, From Bias to Balance: A Data-Driven Approach to Fair Recruitment Practices, with Shiyuan Wang and Dr. Ahmet Ugur.</li>
-    <li><strong>Under Review</strong>, Liu, M., Huang, X., Fan, H., Kolluru, S., and Fan, J (2025). Between Command and Code: Complementarity and Competition Between Human and Algorithmic Control in Gig Platforms, Submitted to the Proceedings of the 59th Hawaii International Conference on System Sciences, Socio-Economic Impacts of AI and Algorithmic Systems (IN) Track (Premier Information Systems Conference).</li>
-    <li><strong>Publication</strong>, Fan, H., & Qu, R. (2019). Analysis of the Current Situation of Employment Behavior and Educational Countermeasures of College Students in Teacher Training. <em>New West</em> (20), 43–44.</li>
-  </ul>
-</div>
+    <section class="section">
+      <div class="shell">
+        <div class="section-heading">
+          <h2>Research</h2>
+          <p class="section-lead">I work across theoretical and applied statistics, responsible AI, and information systems, with an emphasis on transparent empirical evidence and actionable methodological frameworks.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <span class="number">01</span>
+            <h3>Statistics & Analytics</h3>
+            <p>Statistical inference, simulation, empirical analysis, and reproducible data workflows.</p>
+          </article>
+          <article class="card">
+            <span class="number">02</span>
+            <h3>Responsible AI</h3>
+            <p>Algorithmic fairness, bias diagnosis, trust, and evidence-based intervention decisions.</p>
+          </article>
+          <article class="card">
+            <span class="number">03</span>
+            <h3>Human–AI Systems</h3>
+            <p>Human–algorithm decision processes, occupational applications, education, and platform work.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <section class="section">
+      <div class="shell">
+        <div class="section-heading">
+          <h2>Publications</h2>
+          <p class="section-lead">A searchable publication archive with direct links, APA citations, and copy-ready BibTeX. The archive is maintained as structured data so new work can be added without redesigning the website.</p>
+        </div>
+        <div class="feature">
+          <div>
+            <h3>Current publication list</h3>
+            <p>Journal articles, conference papers, TREOs, preprints, and in-press work.</p>
+          </div>
+          <a class="button primary" href="publications.html">Browse all publications</a>
+        </div>
+      </div>
+    </section>
 
+    <section class="section">
+      <div class="shell">
+        <div class="section-heading">
+          <h2>Resources</h2>
+          <p class="section-lead">Selected materials currently hosted on this academic website.</p>
+        </div>
+        <div class="resources">
+          <a class="resource" href="JSM2025_Slides.pdf" target="_blank" rel="noopener">
+            <strong>JSM 2025 Presentation Slides</strong>
+            <span>From Bias to Balance: A Data-Driven Approach to Fair Recruitment Practices →</span>
+          </a>
+          <a class="resource" href="HairuFan_Resume.pdf" target="_blank" rel="noopener">
+            <strong>Curriculum Vitae</strong>
+            <span>View or download the current PDF →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-row">
+      <span>© <span id="year"></span> Hairu Fan</span>
+      <span><a href="mailto:fan2h@cmich.edu">fan2h@cmich.edu</a></span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
