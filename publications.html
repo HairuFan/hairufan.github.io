@@ -6,427 +6,16 @@
   <meta name="description" content="Publications by Hairu Fan in statistics, responsible AI, algorithmic fairness, and information systems.">
   <title>Publications | Hairu Fan</title>
   <style>
-    :root {
-      --ink: #172033;
-      --muted: #5d687b;
-      --line: #dfe5ee;
-      --paper: #ffffff;
-      --wash: #f5f7fb;
-      --accent: #3157d5;
-      --accent-dark: #2444ad;
-      --soft-accent: #edf1ff;
-      --success: #176c4f;
-      --success-bg: #eaf8f2;
-      --warning: #8a5a00;
-      --warning-bg: #fff6dc;
-      --radius: 18px;
-      --shadow: 0 18px 50px rgba(28, 39, 65, 0.08);
-    }
-
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      color: var(--ink);
-      background: var(--wash);
-      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.6;
-    }
-
-    a { color: var(--accent); }
-
-    a:hover { color: var(--accent-dark); }
-
-    .shell {
-      width: min(1120px, calc(100% - 32px));
-      margin: 0 auto;
-    }
-
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: rgba(255, 255, 255, 0.9);
-      border-bottom: 1px solid rgba(223, 229, 238, 0.9);
-      backdrop-filter: blur(12px);
-    }
-
-    .nav {
-      min-height: 68px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-    }
-
-    .brand {
-      color: var(--ink);
-      font-size: 1.05rem;
-      font-weight: 750;
-      text-decoration: none;
-      letter-spacing: -0.01em;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      font-size: 0.94rem;
-    }
-
-    .nav-links a {
-      color: var(--muted);
-      text-decoration: none;
-      font-weight: 650;
-    }
-
-    .nav-links a[aria-current="page"] { color: var(--accent); }
-
-    .hero {
-      padding: 76px 0 34px;
-    }
-
-    .eyebrow {
-      margin: 0 0 10px;
-      color: var(--accent);
-      font-size: 0.78rem;
-      font-weight: 800;
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      max-width: 760px;
-      margin: 0;
-      font-size: clamp(2.4rem, 7vw, 4.7rem);
-      line-height: 1.02;
-      letter-spacing: -0.055em;
-    }
-
-    .intro {
-      max-width: 760px;
-      margin: 22px 0 0;
-      color: var(--muted);
-      font-size: clamp(1rem, 2vw, 1.17rem);
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 26px;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 44px;
-      padding: 0 17px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: var(--paper);
-      color: var(--ink);
-      font-size: 0.9rem;
-      font-weight: 720;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    .button:hover {
-      border-color: #bdc8dc;
-      color: var(--ink);
-    }
-
-    .button.primary {
-      border-color: var(--accent);
-      background: var(--accent);
-      color: white;
-    }
-
-    .button.primary:hover {
-      border-color: var(--accent-dark);
-      background: var(--accent-dark);
-      color: white;
-    }
-
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 14px;
-      margin: 34px 0 0;
-    }
-
-    .stat {
-      padding: 18px 20px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: rgba(255, 255, 255, 0.75);
-    }
-
-    .stat strong {
-      display: block;
-      font-size: 1.7rem;
-      line-height: 1;
-    }
-
-    .stat span {
-      display: block;
-      margin-top: 7px;
-      color: var(--muted);
-      font-size: 0.85rem;
-    }
-
-    .toolbar {
-      display: grid;
-      grid-template-columns: minmax(220px, 1fr) auto;
-      gap: 16px;
-      align-items: center;
-      margin: 24px 0;
-      padding: 16px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: var(--paper);
-      box-shadow: var(--shadow);
-    }
-
-    .search {
-      width: 100%;
-      min-height: 46px;
-      padding: 0 15px;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      color: var(--ink);
-      background: #fbfcfe;
-      font: inherit;
-    }
-
-    .search:focus {
-      outline: 3px solid rgba(49, 87, 213, 0.15);
-      border-color: var(--accent);
-    }
-
-    .filters {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      gap: 8px;
-    }
-
-    .filter {
-      min-height: 38px;
-      padding: 0 13px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: var(--paper);
-      color: var(--muted);
-      font: inherit;
-      font-size: 0.84rem;
-      font-weight: 700;
-      cursor: pointer;
-    }
-
-    .filter.active {
-      border-color: var(--accent);
-      background: var(--soft-accent);
-      color: var(--accent-dark);
-    }
-
-    .results-meta {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      margin: 18px 2px;
-      color: var(--muted);
-      font-size: 0.88rem;
-    }
-
-    .publication-list {
-      display: grid;
-      gap: 16px;
-      padding-bottom: 74px;
-    }
-
-    .publication {
-      padding: 24px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: var(--paper);
-      box-shadow: 0 9px 30px rgba(28, 39, 65, 0.045);
-    }
-
-    .publication-topline {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 11px;
-    }
-
-    .tag {
-      display: inline-flex;
-      align-items: center;
-      min-height: 27px;
-      padding: 0 10px;
-      border-radius: 999px;
-      background: #eff2f7;
-      color: #4e5a6f;
-      font-size: 0.74rem;
-      font-weight: 790;
-      letter-spacing: 0.02em;
-    }
-
-    .tag.published {
-      background: var(--success-bg);
-      color: var(--success);
-    }
-
-    .tag.in-press,
-    .tag.preprint {
-      background: var(--warning-bg);
-      color: var(--warning);
-    }
-
-    .year {
-      margin-left: auto;
-      color: var(--muted);
-      font-size: 0.85rem;
-      font-weight: 750;
-    }
-
-    .publication h2 {
-      margin: 0;
-      font-size: clamp(1.16rem, 2.4vw, 1.42rem);
-      line-height: 1.32;
-      letter-spacing: -0.018em;
-    }
-
-    .authors {
-      margin: 11px 0 0;
-      font-weight: 680;
-    }
-
-    .venue {
-      margin: 3px 0 0;
-      color: var(--muted);
-    }
-
-    .publication-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 18px;
-    }
-
-    .small-action {
-      display: inline-flex;
-      align-items: center;
-      min-height: 37px;
-      padding: 0 12px;
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      background: #fbfcfe;
-      color: var(--ink);
-      font: inherit;
-      font-size: 0.82rem;
-      font-weight: 720;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    .small-action:hover {
-      border-color: #bfc9d9;
-      color: var(--ink);
-    }
-
-    details {
-      margin-top: 14px;
-      border-top: 1px solid var(--line);
-      padding-top: 13px;
-    }
-
-    summary {
-      color: var(--muted);
-      font-size: 0.84rem;
-      font-weight: 720;
-      cursor: pointer;
-    }
-
-    pre {
-      overflow-x: auto;
-      margin: 12px 0 0;
-      padding: 14px;
-      border-radius: 12px;
-      background: #151b29;
-      color: #eaf0ff;
-      font: 0.78rem/1.55 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      white-space: pre-wrap;
-    }
-
-    .empty,
-    .error {
-      padding: 30px;
-      border: 1px dashed #bdc8d9;
-      border-radius: var(--radius);
-      background: var(--paper);
-      color: var(--muted);
-      text-align: center;
-    }
-
-    .site-footer {
-      padding: 30px 0 46px;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
-      font-size: 0.86rem;
-    }
-
-    .footer-row {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-    }
-
-    .toast {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      z-index: 20;
-      transform: translateY(20px);
-      padding: 11px 15px;
-      border-radius: 10px;
-      background: #172033;
-      color: white;
-      font-size: 0.86rem;
-      opacity: 0;
-      pointer-events: none;
-      transition: 180ms ease;
-    }
-
-    .toast.show {
-      transform: translateY(0);
-      opacity: 1;
-    }
-
-    @media (max-width: 760px) {
-      .hero { padding-top: 55px; }
-      .stats { grid-template-columns: 1fr; }
-      .toolbar { grid-template-columns: 1fr; }
-      .filters { justify-content: flex-start; }
-      .nav-links { gap: 13px; font-size: 0.86rem; }
-      .publication { padding: 20px; }
-    }
-
-    @media (max-width: 480px) {
-      .shell { width: min(100% - 22px, 1120px); }
-      .nav { gap: 12px; }
-      .nav-links a:last-child { display: none; }
-      .year { width: 100%; margin-left: 0; }
-    }
+    :root{--ink:#172033;--muted:#5d687b;--line:#dfe5ee;--paper:#fff;--wash:#f5f7fb;--accent:#3157d5;--accent-dark:#2444ad;--soft:#edf1ff;--radius:18px;--shadow:0 18px 50px rgba(28,39,65,.08)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--wash);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:var(--accent)}a:hover{color:var(--accent-dark)}
+    .shell{width:min(1120px,calc(100% - 32px));margin:0 auto}.site-header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.9);border-bottom:1px solid rgba(223,229,238,.9);backdrop-filter:blur(12px)}.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{color:var(--ink);font-size:1.05rem;font-weight:750;text-decoration:none}.nav-links{display:flex;gap:20px;font-size:.94rem}.nav-links a{color:var(--muted);font-weight:650;text-decoration:none}.nav-links a[aria-current="page"]{color:var(--accent)}
+    .hero{padding:76px 0 34px}.eyebrow{margin:0 0 10px;color:var(--accent);font-size:.78rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase}h1{margin:0;font-size:clamp(2.4rem,7vw,4.7rem);line-height:1.02;letter-spacing:-.055em}.intro{max-width:760px;margin:22px 0 0;color:var(--muted);font-size:clamp(1rem,2vw,1.17rem)}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+    .button,.small-action{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);background:var(--paper);color:var(--ink);font-weight:720;text-decoration:none;cursor:pointer}.button{min-height:44px;padding:0 17px;border-radius:999px;font-size:.9rem}.button.primary{border-color:var(--accent);background:var(--accent);color:#fff}.button.primary:hover{background:var(--accent-dark);color:#fff}
+    .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:34px}.stat{padding:18px 20px;border:1px solid var(--line);border-radius:var(--radius);background:rgba(255,255,255,.75)}.stat strong{display:block;font-size:1.7rem;line-height:1}.stat span{display:block;margin-top:7px;color:var(--muted);font-size:.85rem}
+    .toolbar{display:grid;grid-template-columns:minmax(220px,1fr) auto;gap:16px;align-items:center;margin:24px 0;padding:16px;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);box-shadow:var(--shadow)}.search{width:100%;min-height:46px;padding:0 15px;border:1px solid var(--line);border-radius:12px;background:#fbfcfe;font:inherit}.filters{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}.filter{min-height:38px;padding:0 13px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--muted);font:inherit;font-size:.84rem;font-weight:700;cursor:pointer}.filter.active{border-color:var(--accent);background:var(--soft);color:var(--accent-dark)}
+    .results-meta{display:flex;justify-content:space-between;gap:16px;margin:18px 2px;color:var(--muted);font-size:.88rem}.publication-list{display:grid;gap:16px;padding-bottom:74px}.publication{padding:24px;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);box-shadow:0 9px 30px rgba(28,39,65,.045)}.topline{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:11px}.tag{display:inline-flex;align-items:center;min-height:27px;padding:0 10px;border-radius:999px;background:#eff2f7;color:#4e5a6f;font-size:.74rem;font-weight:790}.year{margin-left:auto;color:var(--muted);font-size:.85rem;font-weight:750}.publication h2{margin:0;font-size:clamp(1.16rem,2.4vw,1.42rem);line-height:1.32}.authors{margin:11px 0 0;font-weight:680}.venue{margin:3px 0 0;color:var(--muted)}.publication-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.small-action{min-height:37px;padding:0 12px;border-radius:10px;background:#fbfcfe;font:inherit;font-size:.82rem}.small-action:hover{border-color:#bfc9d9;color:var(--ink)}details{margin-top:14px;border-top:1px solid var(--line);padding-top:13px}summary{color:var(--muted);font-size:.84rem;font-weight:720;cursor:pointer}pre{overflow-x:auto;margin:12px 0 0;padding:14px;border-radius:12px;background:#151b29;color:#eaf0ff;font:0.78rem/1.55 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;white-space:pre-wrap}.empty{padding:30px;border:1px dashed #bdc8d9;border-radius:var(--radius);background:var(--paper);color:var(--muted);text-align:center}
+    .site-footer{padding:30px 0 46px;border-top:1px solid var(--line);color:var(--muted);font-size:.86rem}.footer-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}.toast{position:fixed;right:20px;bottom:20px;transform:translateY(20px);padding:11px 15px;border-radius:10px;background:#172033;color:#fff;font-size:.86rem;opacity:0;pointer-events:none;transition:180ms}.toast.show{transform:translateY(0);opacity:1}
+    @media(max-width:760px){.stats{grid-template-columns:1fr}.toolbar{grid-template-columns:1fr}.filters{justify-content:flex-start}.nav-links{gap:13px;font-size:.86rem}.publication{padding:20px}}@media(max-width:480px){.shell{width:min(100% - 22px,1120px)}.year{width:100%;margin-left:0}}
   </style>
 </head>
 <body>
@@ -436,7 +25,7 @@
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="index.html">Home</a>
         <a href="publications.html" aria-current="page">Publications</a>
-        <a href="HairuFan_Resume.pdf" target="_blank" rel="noopener">CV</a>
+        <a href="resume.html">CV</a>
       </nav>
     </div>
   </header>
@@ -447,201 +36,46 @@
       <h1>Publications</h1>
       <p class="intro">Research spanning statistics, responsible AI, algorithmic fairness, human–algorithm decision systems, and information systems.</p>
       <div class="hero-actions">
-        <a class="button primary" href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="button primary" href="resume.html">View CV</a>
         <a class="button" id="source-link" href="#" target="_blank" rel="noopener">Source document</a>
         <a class="button" href="https://github.com/HairuFan/hairufan.github.io/edit/main/publications.json" target="_blank" rel="noopener">Edit publications</a>
       </div>
-
-      <div class="stats" aria-label="Publication summary">
+      <div class="stats">
         <div class="stat"><strong id="total-count">—</strong><span>Total items</span></div>
         <div class="stat"><strong id="published-count">—</strong><span>Published</span></div>
         <div class="stat"><strong id="active-count">—</strong><span>In press or preprint</span></div>
       </div>
     </section>
 
-    <section class="shell" aria-labelledby="publication-browser">
-      <h2 id="publication-browser" style="position:absolute;left:-9999px;">Publication browser</h2>
+    <section class="shell">
       <div class="toolbar">
         <input class="search" id="search" type="search" placeholder="Search title, author, venue, or topic…" aria-label="Search publications">
-        <div class="filters" id="filters" aria-label="Filter publications by type"></div>
+        <div class="filters" id="filters"></div>
       </div>
-      <div class="results-meta">
-        <span id="results-count">Loading publications…</span>
-        <span id="updated-date"></span>
-      </div>
+      <div class="results-meta"><span id="results-count">Loading publications…</span><span id="updated-date"></span></div>
       <div class="publication-list" id="publication-list" aria-live="polite"></div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="shell footer-row">
-      <span>© <span id="current-year"></span> Hairu Fan</span>
-      <span>Built as a maintainable GitHub Pages publication archive.</span>
-    </div>
-  </footer>
-
+  <footer class="site-footer"><div class="shell footer-row"><span>© <span id="current-year"></span> Hairu Fan</span><span>Maintained with GitHub Pages.</span></div></footer>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script>
-    const state = {
-      publications: [],
-      activeType: 'All',
-      query: ''
-    };
+    const state={publications:[],activeType:'All',query:''};
+    const list=document.getElementById('publication-list');
+    const filters=document.getElementById('filters');
+    const toast=document.getElementById('toast');
+    document.getElementById('current-year').textContent=new Date().getFullYear();
 
-    const listNode = document.getElementById('publication-list');
-    const filtersNode = document.getElementById('filters');
-    const searchNode = document.getElementById('search');
-    const toastNode = document.getElementById('toast');
+    function showToast(message){toast.textContent=message;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),1500)}
+    async function copyText(text,label){try{await navigator.clipboard.writeText(text);showToast(label+' copied')}catch{showToast('Copy failed')}}
+    function slug(value){return value.toLowerCase().replace(/\s+/g,'-')}
+    function renderFilters(){const types=['All',...new Set(state.publications.map(p=>p.type))];filters.innerHTML='';types.forEach(type=>{const button=document.createElement('button');button.className='filter'+(type===state.activeType?' active':'');button.textContent=type;button.onclick=()=>{state.activeType=type;renderFilters();render()};filters.appendChild(button)})}
+    function filtered(){const q=state.query.trim().toLowerCase();return state.publications.filter(p=>{const typeOK=state.activeType==='All'||p.type===state.activeType;const text=[p.title,p.authors,p.venue,p.type,p.status,p.year].join(' ').toLowerCase();return typeOK&&(!q||text.includes(q))})}
+    function render(){const items=filtered();document.getElementById('results-count').textContent=`Showing ${items.length} of ${state.publications.length} items`;list.innerHTML='';if(!items.length){list.innerHTML='<div class="empty">No publications match the current search or filter.</div>';return}items.forEach(p=>{const card=document.createElement('article');card.className='publication';card.innerHTML=`<div class="topline"><span class="tag">${p.type}</span><span class="tag ${slug(p.status)}">${p.status}</span><span class="year">${p.year}</span></div><h2>${p.title}</h2><p class="authors">${p.authors}</p><p class="venue">${p.venue}</p><div class="publication-actions"><a class="small-action" href="${p.url}" target="_blank" rel="noopener">${p.linkLabel||'Open paper'}</a><button class="small-action copy-apa">Copy APA</button><button class="small-action copy-bib">Copy BibTeX</button></div><details><summary>View BibTeX</summary><pre></pre></details>`;card.querySelector('pre').textContent=p.bibtex;card.querySelector('.copy-apa').onclick=()=>copyText(p.apa,'APA citation');card.querySelector('.copy-bib').onclick=()=>copyText(p.bibtex,'BibTeX');list.appendChild(card)})}
+    document.getElementById('search').addEventListener('input',e=>{state.query=e.target.value;render()});
 
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-
-    function escapeHTML(value = '') {
-      return String(value)
-        .replaceAll('&', '&amp;')
-        .replaceAll('<', '&lt;')
-        .replaceAll('>', '&gt;')
-        .replaceAll('"', '&quot;')
-        .replaceAll("'", '&#039;');
-    }
-
-    function statusClass(status = '') {
-      return status.toLowerCase().replaceAll(' ', '-');
-    }
-
-    function formattedDate(dateString) {
-      const date = new Date(`${dateString}T12:00:00`);
-      if (Number.isNaN(date.getTime())) return dateString;
-      return new Intl.DateTimeFormat('en-US', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-      }).format(date);
-    }
-
-    function showToast(message) {
-      toastNode.textContent = message;
-      toastNode.classList.add('show');
-      window.clearTimeout(showToast.timer);
-      showToast.timer = window.setTimeout(() => toastNode.classList.remove('show'), 1700);
-    }
-
-    async function copyText(text, label) {
-      try {
-        await navigator.clipboard.writeText(text);
-      } catch (error) {
-        const textarea = document.createElement('textarea');
-        textarea.value = text;
-        textarea.style.position = 'fixed';
-        textarea.style.opacity = '0';
-        document.body.appendChild(textarea);
-        textarea.select();
-        document.execCommand('copy');
-        textarea.remove();
-      }
-      showToast(`${label} copied`);
-    }
-
-    function publicationCard(item) {
-      const article = document.createElement('article');
-      article.className = 'publication';
-      article.id = escapeHTML(item.id);
-      article.innerHTML = `
-        <div class="publication-topline">
-          <span class="tag">${escapeHTML(item.type)}</span>
-          <span class="tag ${statusClass(item.status)}">${escapeHTML(item.status)}</span>
-          <span class="year">${escapeHTML(item.year)}</span>
-        </div>
-        <h2>${escapeHTML(item.title)}</h2>
-        <p class="authors">${escapeHTML(item.authors)}</p>
-        <p class="venue">${escapeHTML(item.venue)}</p>
-        <div class="publication-actions">
-          <a class="small-action" href="${escapeHTML(item.url)}" target="_blank" rel="noopener">${escapeHTML(item.linkLabel || 'View paper')} ↗</a>
-          <button class="small-action copy-apa" type="button">Copy APA</button>
-          <button class="small-action copy-bibtex" type="button">Copy BibTeX</button>
-        </div>
-        <details>
-          <summary>Show citation details</summary>
-          <p>${escapeHTML(item.apa)}</p>
-          <pre>${escapeHTML(item.bibtex)}</pre>
-        </details>
-      `;
-      article.querySelector('.copy-apa').addEventListener('click', () => copyText(item.apa, 'APA citation'));
-      article.querySelector('.copy-bibtex').addEventListener('click', () => copyText(item.bibtex, 'BibTeX'));
-      return article;
-    }
-
-    function renderFilters() {
-      const types = ['All', ...new Set(state.publications.map(item => item.type))];
-      filtersNode.innerHTML = '';
-      types.forEach(type => {
-        const button = document.createElement('button');
-        button.type = 'button';
-        button.className = `filter${state.activeType === type ? ' active' : ''}`;
-        button.textContent = type;
-        button.addEventListener('click', () => {
-          state.activeType = type;
-          renderFilters();
-          renderPublications();
-        });
-        filtersNode.appendChild(button);
-      });
-    }
-
-    function renderPublications() {
-      const query = state.query.trim().toLowerCase();
-      const filtered = state.publications.filter(item => {
-        const matchesType = state.activeType === 'All' || item.type === state.activeType;
-        const searchable = [item.title, item.authors, item.venue, item.type, item.status, item.apa]
-          .join(' ')
-          .toLowerCase();
-        return matchesType && (!query || searchable.includes(query));
-      });
-
-      listNode.innerHTML = '';
-      document.getElementById('results-count').textContent = `${filtered.length} of ${state.publications.length} items`;
-
-      if (!filtered.length) {
-        listNode.innerHTML = '<div class="empty">No publications match this search and filter.</div>';
-        return;
-      }
-
-      filtered.forEach(item => listNode.appendChild(publicationCard(item)));
-    }
-
-    function updateSummary(data) {
-      const published = data.publications.filter(item => item.status === 'Published').length;
-      const active = data.publications.filter(item => item.status !== 'Published').length;
-      document.getElementById('total-count').textContent = data.publications.length;
-      document.getElementById('published-count').textContent = published;
-      document.getElementById('active-count').textContent = active;
-      document.getElementById('updated-date').textContent = `Updated ${formattedDate(data.lastUpdated)}`;
-      document.getElementById('source-link').href = data.sourceDocument;
-    }
-
-    searchNode.addEventListener('input', event => {
-      state.query = event.target.value;
-      renderPublications();
-    });
-
-    fetch('publications.json', { cache: 'no-store' })
-      .then(response => {
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        return response.json();
-      })
-      .then(data => {
-        state.publications = data.publications
-          .slice()
-          .sort((a, b) => Number(b.year) - Number(a.year) || a.title.localeCompare(b.title));
-        updateSummary(data);
-        renderFilters();
-        renderPublications();
-      })
-      .catch(error => {
-        console.error(error);
-        document.getElementById('results-count').textContent = 'Unable to load publications';
-        listNode.innerHTML = '<div class="error">The publication data could not be loaded. Please try refreshing the page.</div>';
-      });
+    fetch('publications.json').then(r=>{if(!r.ok)throw new Error('Unable to load publication data');return r.json()}).then(data=>{state.publications=data.publications||[];document.getElementById('source-link').href=data.sourceDocument||'#';document.getElementById('updated-date').textContent=data.lastUpdated?`Updated ${data.lastUpdated}`:'';document.getElementById('total-count').textContent=state.publications.length;document.getElementById('published-count').textContent=state.publications.filter(p=>p.status==='Published').length;document.getElementById('active-count').textContent=state.publications.filter(p=>p.status!=='Published').length;renderFilters();render()}).catch(error=>{list.innerHTML=`<div class="empty">${error.message}</div>`});
   </script>
 </body>
 </html>
