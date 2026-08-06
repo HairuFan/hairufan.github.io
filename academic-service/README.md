@@ -1,6 +1,6 @@
 # Academic Service and Peer Review Experience
 
-_Last updated: August 5, 2026_
+_Last updated: August 6, 2026_
 
 | Role | Conference or organization | Dates |
 |---|---|---|
@@ -15,6 +15,8 @@ _Last updated: August 5, 2026_
 | Peer Reviewer | 3rd International Conference on Intelligent Systems, Blockchain, and Communication Technologies (ISBCom 2026) | Feb 2026 – Mar 2026 |
 | Peer Reviewer | Pacific Asia Conference on Information Systems (PACIS 2026) | Apr 2026 |
 | Conference Peer Reviewer | Association for Information Systems / International Conference on Information Systems (ICIS 2026) | Jun 2026 |
+| Peer Reviewer | IEEE 4th International Conference on Artificial Intelligence, Blockchain and Internet of Things (AIBThings 2026) | Jun 2026 – Jul 2026 |
+| Peer Reviewer | 27th International Conference on Web Information Systems Engineering (WISE 2026) | Jun 2026 – Jul 2026 |
 | Peer Reviewer | Hawaii International Conference on System Sciences (HICSS-60) | Jun 2026 – Aug 2026 |
 
 [Return to the academic website](https://hairufan.github.io/) · [View publications](https://hairufan.github.io/publications.html) · [View online CV](https://hairufan.github.io/resume.html)
