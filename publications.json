@@ -1,0 +1,97 @@
+{
+  "lastUpdated": "2026-08-05",
+  "sourceDocument": "https://docs.google.com/document/d/1_ZIhsAccuYwDXxsDFC9TzmV-Wu2KU_EqAGTQ25GFkkg/edit?usp=sharing",
+  "publications": [
+    {
+      "id": "fed-rate-cuts-2026",
+      "type": "Journal Article",
+      "status": "Published",
+      "year": 2026,
+      "title": "Asymmetric impact of Fed rate cuts on growth and value mutual fund performance",
+      "authors": "Fan, H., & Shu, M.",
+      "venue": "Mathematics, 14(1), Article 24",
+      "apa": "Fan, H., & Shu, M. (2026). Asymmetric impact of Fed rate cuts on growth and value mutual fund performance. Mathematics, 14(1), Article 24.",
+      "url": "https://doi.org/10.3390/math14010024",
+      "linkLabel": "DOI",
+      "bibtex": "@article{Fan2026FedRateCutsFunds,\n  author  = {Fan, Hairu and Shu, Min},\n  title   = {Asymmetric Impact of Fed Rate Cuts on Growth and Value Mutual Fund Performance},\n  journal = {Mathematics},\n  year    = {2026},\n  volume  = {14},\n  number  = {1},\n  pages   = {24},\n  doi     = {10.3390/math14010024}\n}"
+    },
+    {
+      "id": "hiring-bias-icmi-2026",
+      "type": "Conference Paper",
+      "status": "Published",
+      "year": 2026,
+      "title": "Diagnosing algorithmic bias in AI-powered hiring: Toward a fairness-aware framework",
+      "authors": "Fan, H., & Wang, S.",
+      "venue": "2026 IEEE 5th International Conference on Computing and Machine Intelligence (ICMI), pp. 1–5",
+      "apa": "Fan, H., & Wang, S. (2026). Diagnosing algorithmic bias in AI-powered hiring: Toward a fairness-aware framework. In 2026 IEEE 5th International Conference on Computing and Machine Intelligence (ICMI) (pp. 1–5). IEEE.",
+      "url": "https://doi.org/10.1109/ICMI68585.2026.11539889",
+      "linkLabel": "DOI",
+      "bibtex": "@inproceedings{11539889,\n  author    = {Fan, Hairu and Wang, Shiyuan},\n  booktitle = {2026 IEEE 5th International Conference on Computing and Machine Intelligence (ICMI)},\n  title     = {Diagnosing Algorithmic Bias in AI-Powered Hiring: Toward a Fairness-Aware Framework},\n  year      = {2026},\n  pages     = {1--5},\n  doi       = {10.1109/ICMI68585.2026.11539889}\n}"
+    },
+    {
+      "id": "hybrid-distortion-treo-2026",
+      "type": "Conference TREO",
+      "status": "Published",
+      "year": 2026,
+      "title": "A hybrid distortion architecture of bias in human–algorithm decision systems",
+      "authors": "Fan, H., & Huang, X.",
+      "venue": "AMCIS 2026 TREOs, Paper 9, Association for Information Systems",
+      "apa": "Fan, H., & Huang, X. (2026). A hybrid distortion architecture of bias in human–algorithm decision systems. AMCIS 2026 TREOs, Paper 9. Association for Information Systems.",
+      "url": "https://aisel.aisnet.org/treos_amcis2026/9",
+      "linkLabel": "AIS eLibrary",
+      "bibtex": "@inproceedings{FanHuang2026HybridDistortion,\n  author       = {Fan, Hairu and Huang, Xuemei},\n  title        = {A Hybrid Distortion Architecture of Bias in Human--Algorithm Decision Systems},\n  booktitle    = {AMCIS 2026 TREOs},\n  year         = {2026},\n  organization = {Association for Information Systems},\n  number       = {9},\n  url          = {https://aisel.aisnet.org/treos_amcis2026/9}\n}"
+    },
+    {
+      "id": "balancing-bosses-amcis-2026",
+      "type": "Conference Paper",
+      "status": "Published",
+      "year": 2026,
+      "title": "Balancing the bosses: Contingent complementarity between human and algorithmic control in gig platforms",
+      "authors": "Huang, X., Liu, M., Fan, H., & Kolluru, S.",
+      "venue": "AMCIS 2026 Proceedings, Paper 8, Association for Information Systems",
+      "apa": "Huang, X., Liu, M., Fan, H., & Kolluru, S. (2026). Balancing the bosses: Contingent complementarity between human and algorithmic control in gig platforms. AMCIS 2026 Proceedings, Paper 8. Association for Information Systems.",
+      "url": "https://aisel.aisnet.org/amcis2026/sigcnow/sigcnow/8",
+      "linkLabel": "AIS eLibrary",
+      "bibtex": "@inproceedings{HuangLiuFanKolluru2026BalancingBosses,\n  author       = {Huang, Xuemei and Liu, Ming and Fan, Hairu and Kolluru, Sivakumar},\n  title        = {Balancing the Bosses: Contingent Complementarity Between Human and Algorithmic Control in Gig Platforms},\n  booktitle    = {AMCIS 2026 Proceedings},\n  year         = {2026},\n  organization = {Association for Information Systems},\n  number       = {8},\n  url          = {https://aisel.aisnet.org/amcis2026/sigcnow/sigcnow/8}\n}"
+    },
+    {
+      "id": "dwa-curriculum-preprint-2026",
+      "type": "Preprint",
+      "status": "Preprint",
+      "year": 2026,
+      "title": "Mapping curricula to occupational work activities using a shared DWA ontology: Evidence from the Course-Skill Atlas and O*NET",
+      "authors": "Fan, H., Wang, S., & Liu, M.",
+      "venue": "Research Square, Version 1",
+      "apa": "Fan, H., Wang, S., & Liu, M. (2026). Mapping curricula to occupational work activities using a shared DWA ontology: Evidence from the Course-Skill Atlas and O*NET [Preprint]. Research Square.",
+      "url": "https://doi.org/10.21203/rs.3.rs-10252789/v1",
+      "linkLabel": "Preprint",
+      "bibtex": "@misc{Fan2026DWAPreprint,\n  author    = {Fan, Hairu and Wang, Shiyuan and Liu, Ming},\n  title     = {Mapping Curricula to Occupational Work Activities Using a Shared DWA Ontology: Evidence from the Course-Skill Atlas and O*NET},\n  year      = {2026},\n  month     = jul,\n  day       = {7},\n  note      = {Preprint, Version 1},\n  publisher = {Research Square},\n  doi       = {10.21203/rs.3.rs-10252789/v1},\n  url       = {https://doi.org/10.21203/rs.3.rs-10252789/v1}\n}"
+    },
+    {
+      "id": "attribution-disparity-aibthings-2026",
+      "type": "Conference Paper",
+      "status": "In press",
+      "year": 2026,
+      "title": "From attribution to disparity: A textual pathway analysis of bias in BERT-based occupation classification",
+      "authors": "Fan, H., & Wang, S.",
+      "venue": "2026 IEEE 4th International Conference on Artificial Intelligence, Blockchain, and Internet of Things (AIBThings)",
+      "apa": "Fan, H., & Wang, S. (in press). From attribution to disparity: A textual pathway analysis of bias in BERT-based occupation classification. In 2026 IEEE 4th International Conference on Artificial Intelligence, Blockchain, and Internet of Things (AIBThings). IEEE.",
+      "url": "https://aibthings.com/",
+      "linkLabel": "Conference",
+      "bibtex": "@inproceedings{FanWang2026Attribution,\n  author    = {Fan, Hairu and Wang, Shiyuan},\n  title     = {From Attribution to Disparity: A Textual Pathway Analysis of Bias in {BERT}-Based Occupation Classification},\n  booktitle = {2026 IEEE 4th International Conference on Artificial Intelligence, Blockchain, and Internet of Things (AIBThings)},\n  publisher = {IEEE},\n  year      = {2026},\n  note      = {In press; Article identifier: AIBThings2026-154},\n  url       = {https://aibthings.com/}\n}"
+    },
+    {
+      "id": "hybrid-bias-aibthings-2026",
+      "type": "Conference Paper",
+      "status": "In press",
+      "year": 2026,
+      "title": "Hybrid bias distortion in AI-assisted occupation classification: A pilot study",
+      "authors": "Fan, H., & Wang, S.",
+      "venue": "2026 IEEE 4th International Conference on Artificial Intelligence, Blockchain, and Internet of Things (AIBThings)",
+      "apa": "Fan, H., & Wang, S. (in press). Hybrid bias distortion in AI-assisted occupation classification: A pilot study. In 2026 IEEE 4th International Conference on Artificial Intelligence, Blockchain, and Internet of Things (AIBThings). IEEE.",
+      "url": "https://aibthings.com/",
+      "linkLabel": "Conference",
+      "bibtex": "@inproceedings{FanWang2026Hybrid,\n  author    = {Fan, Hairu and Wang, Shiyuan},\n  title     = {Hybrid Bias Distortion in {AI}-Assisted Occupation Classification: A Pilot Study},\n  booktitle = {2026 IEEE 4th International Conference on Artificial Intelligence, Blockchain, and Internet of Things (AIBThings)},\n  publisher = {IEEE},\n  year      = {2026},\n  note      = {In press; Article identifier: AIBThings2026-164},\n  url       = {https://aibthings.com/}\n}"
+    }
+  ]
+}
