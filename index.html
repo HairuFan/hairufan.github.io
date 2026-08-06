@@ -13,7 +13,7 @@
     .profile-card{padding:24px;border:1px solid var(--line);border-radius:24px;background:var(--paper);box-shadow:var(--shadow)}.monogram{display:grid;width:86px;height:86px;place-items:center;border-radius:24px;background:linear-gradient(145deg,#3157d5,#7892ee);color:#fff;font-size:1.75rem;font-weight:830;letter-spacing:-.04em}.profile-card h2{margin:20px 0 3px;font-size:1.15rem}.profile-card p{margin:0;color:var(--muted);font-size:.91rem}.profile-links{display:grid;gap:8px;margin-top:18px}.profile-links a{padding:10px 12px;border-radius:10px;background:var(--wash);color:var(--ink);font-size:.86rem;font-weight:680;text-decoration:none}
     .section{padding:70px 0;border-top:1px solid var(--line)}.section-heading{display:grid;grid-template-columns:minmax(180px,.4fr) minmax(0,1fr);gap:42px;align-items:start;margin-bottom:30px}.section h2{margin:0;font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.1;letter-spacing:-.04em}.section-lead{max-width:720px;margin:0;color:var(--muted);font-size:1.04rem}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.card{min-height:190px;padding:22px;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper)}.card .number{color:var(--accent);font-size:.75rem;font-weight:820;letter-spacing:.1em}.card h3{margin:28px 0 8px;font-size:1.08rem;line-height:1.3}.card p{margin:0;color:var(--muted);font-size:.9rem}.feature{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center;padding:28px;border:1px solid #cfd8ee;border-radius:24px;background:linear-gradient(145deg,#fff,#edf1ff);box-shadow:var(--shadow)}.feature h3{margin:0 0 7px;font-size:1.35rem;letter-spacing:-.02em}.feature p{margin:0;color:var(--muted)}
     .service-list{display:flex;flex-wrap:wrap;gap:9px;margin:18px 0 0}.service-list span{padding:8px 11px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--muted);font-size:.84rem;font-weight:680}.resources{display:grid;grid-template-columns:1fr;gap:15px}.resource{display:flex;min-height:115px;flex-direction:column;justify-content:space-between;padding:21px;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);color:var(--ink);text-decoration:none}.resource strong{font-size:1.04rem}.resource span{color:var(--muted);font-size:.86rem}.site-footer{padding:30px 0 46px;border-top:1px solid var(--line);color:var(--muted);font-size:.86rem}.footer-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:15px}
-    @media(max-width:820px){.hero{grid-template-columns:1fr;min-height:auto}.profile-card{max-width:470px}.section-heading{grid-template-columns:1fr;gap:16px}.grid{grid-template-columns:1fr}}@media(max-width:600px){.shell{width:min(100% - 22px,1080px)}.hero{padding:55px 0;gap:32px}.feature{grid-template-columns:1fr}.resources{grid-template-columns:1fr}.nav-links{gap:13px;font-size:.84rem}.nav-links a[href="#academic-service"]{display:none}}
+    @media(max-width:820px){.hero{grid-template-columns:1fr;min-height:auto}.profile-card{max-width:470px}.section-heading{grid-template-columns:1fr;gap:16px}.grid{grid-template-columns:1fr}}@media(max-width:600px){.shell{width:min(100% - 22px,1080px)}.hero{padding:55px 0;gap:32px}.feature{grid-template-columns:1fr}.resources{grid-template-columns:1fr}.nav-links{gap:13px;font-size:.84rem}.nav-links a[href="#presentations"],.nav-links a[href="#academic-service"]{display:none}}
   </style>
 </head>
 <body>
@@ -23,6 +23,7 @@
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="index.html" aria-current="page">Home</a>
         <a href="publications.html">Publications</a>
+        <a href="#presentations">Presentations</a>
         <a href="#academic-service">Academic Service</a>
         <a href="resume.html">CV</a>
       </nav>
@@ -37,6 +38,7 @@
         <p class="hero-copy">Ph.D. student in Statistics & Analytics at Central Michigan University. My research focuses on statistical methods, algorithmic fairness, human–AI decision systems, and data-informed research.</p>
         <div class="actions">
           <a class="button primary" href="publications.html">View publications</a>
+          <a class="button" href="#presentations">Presentations</a>
           <a class="button" href="#academic-service">Academic service</a>
           <span class="button">Email: fan2h@cmich.edu</span>
         </div>
@@ -47,6 +49,7 @@
         <p>Ph.D. Student<br>Statistics & Analytics<br>Central Michigan University</p>
         <div class="profile-links">
           <a href="publications.html">Publication archive →</a>
+          <a href="#presentations">Presentations →</a>
           <a href="#academic-service">Academic service →</a>
           <a href="resume.html">Online CV →</a>
           <a href="https://www.linkedin.com/in/hairu-fan-383791265/" target="_blank" rel="noopener">LinkedIn →</a>
@@ -72,6 +75,22 @@
         <div class="feature">
           <div><h3>Current publication list</h3><p>Journal articles, conference papers, TREOs, preprints, and in-press work.</p></div>
           <a class="button primary" href="publications.html">Browse all publications</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="presentations">
+      <div class="shell">
+        <div class="section-heading"><h2>Presentations</h2><p class="section-lead">Conference talks, university research presentations, seminars, and invited presentations spanning responsible AI, algorithmic fairness, financial analytics, and digital-platform governance.</p></div>
+        <div class="feature">
+          <div>
+            <h3>Conference and Research Talks</h3>
+            <p>7 presentations across national conferences, international conferences, university exhibitions, seminars, and research symposia, 2025–2026.</p>
+            <div class="service-list" aria-label="Presentation venues">
+              <span>JSM 2025</span><span>SCREE 2025</span><span>STAD Seminar</span><span>Klymyshyn Symposium</span><span>ICMI 2026</span><span>SCREE 2026</span><span>AMCIS 2026</span>
+            </div>
+          </div>
+          <a class="button primary" href="https://github.com/HairuFan/hairufan.github.io/blob/main/presentations/README.md" target="_blank" rel="noopener">View presentation record</a>
         </div>
       </div>
     </section>
