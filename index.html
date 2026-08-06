@@ -6,63 +6,14 @@
   <meta name="description" content="Academic website of Hairu Fan, a Ph.D. student in Statistics and Analytics at Central Michigan University.">
   <title>Hairu Fan | Statistics & Analytics</title>
   <style>
-    :root {
-      --ink:#172033;
-      --muted:#5d687b;
-      --line:#dfe5ee;
-      --paper:#fff;
-      --wash:#f5f7fb;
-      --accent:#3157d5;
-      --accent-dark:#2444ad;
-      --radius:18px;
-      --shadow:0 18px 50px rgba(28,39,65,.08);
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;color:var(--ink);background:var(--wash);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
-    a{color:var(--accent)}
-    a:hover{color:var(--accent-dark)}
-    .shell{width:min(1080px,calc(100% - 32px));margin:0 auto}
-    .site-header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.9);border-bottom:1px solid rgba(223,229,238,.9);backdrop-filter:blur(12px)}
-    .nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .brand{color:var(--ink);font-size:1.05rem;font-weight:780;letter-spacing:-.01em;text-decoration:none}
-    .nav-links{display:flex;align-items:center;gap:20px;font-size:.94rem}
-    .nav-links a{color:var(--muted);font-weight:680;text-decoration:none}
-    .nav-links a[aria-current="page"]{color:var(--accent)}
-    .hero{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(250px,.55fr);gap:48px;align-items:center;min-height:550px;padding:70px 0}
-    .eyebrow{margin:0 0 12px;color:var(--accent);font-size:.78rem;font-weight:820;letter-spacing:.13em;text-transform:uppercase}
-    h1{margin:0;font-size:clamp(3rem,8vw,5.7rem);line-height:.96;letter-spacing:-.065em}
-    .hero-copy{max-width:710px;margin:24px 0 0;color:var(--muted);font-size:clamp(1.04rem,2vw,1.22rem)}
-    .actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:28px}
-    .button{display:inline-flex;align-items:center;justify-content:center;min-height:45px;padding:0 17px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--ink);font-size:.9rem;font-weight:740;text-decoration:none}
-    .button.primary{border-color:var(--accent);background:var(--accent);color:#fff}
-    .button.primary:hover{border-color:var(--accent-dark);background:var(--accent-dark);color:#fff}
-    .profile-card{padding:24px;border:1px solid var(--line);border-radius:24px;background:var(--paper);box-shadow:var(--shadow)}
-    .monogram{display:grid;width:86px;height:86px;place-items:center;border-radius:24px;background:linear-gradient(145deg,#3157d5,#7892ee);color:#fff;font-size:1.75rem;font-weight:830;letter-spacing:-.04em}
-    .profile-card h2{margin:20px 0 3px;font-size:1.15rem}
-    .profile-card p{margin:0;color:var(--muted);font-size:.91rem}
-    .profile-links{display:grid;gap:8px;margin-top:18px}
-    .profile-links a{padding:10px 12px;border-radius:10px;background:var(--wash);color:var(--ink);font-size:.86rem;font-weight:680;text-decoration:none}
-    .section{padding:70px 0;border-top:1px solid var(--line)}
-    .section-heading{display:grid;grid-template-columns:minmax(180px,.4fr) minmax(0,1fr);gap:42px;align-items:start;margin-bottom:30px}
-    .section h2{margin:0;font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.1;letter-spacing:-.04em}
-    .section-lead{max-width:720px;margin:0;color:var(--muted);font-size:1.04rem}
-    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
-    .card{min-height:190px;padding:22px;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper)}
-    .card .number{color:var(--accent);font-size:.75rem;font-weight:820;letter-spacing:.1em}
-    .card h3{margin:28px 0 8px;font-size:1.08rem;line-height:1.3}
-    .card p{margin:0;color:var(--muted);font-size:.9rem}
-    .feature{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center;padding:28px;border:1px solid #cfd8ee;border-radius:24px;background:linear-gradient(145deg,#fff,#edf1ff);box-shadow:var(--shadow)}
-    .feature h3{margin:0 0 7px;font-size:1.35rem;letter-spacing:-.02em}
-    .feature p{margin:0;color:var(--muted)}
-    .resources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
-    .resource{display:flex;min-height:115px;flex-direction:column;justify-content:space-between;padding:21px;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);color:var(--ink);text-decoration:none}
-    .resource strong{font-size:1.04rem}
-    .resource span{color:var(--muted);font-size:.86rem}
-    .site-footer{padding:30px 0 46px;border-top:1px solid var(--line);color:var(--muted);font-size:.86rem}
-    .footer-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:15px}
-    @media(max-width:820px){.hero{grid-template-columns:1fr;min-height:auto}.profile-card{max-width:470px}.section-heading{grid-template-columns:1fr;gap:16px}.grid{grid-template-columns:1fr}}
-    @media(max-width:600px){.shell{width:min(100% - 22px,1080px)}.hero{padding:55px 0;gap:32px}.feature{grid-template-columns:1fr}.resources{grid-template-columns:1fr}.nav-links{gap:13px;font-size:.86rem}}
+    :root{--ink:#172033;--muted:#5d687b;--line:#dfe5ee;--paper:#fff;--wash:#f5f7fb;--accent:#3157d5;--accent-dark:#2444ad;--radius:18px;--shadow:0 18px 50px rgba(28,39,65,.08)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--wash);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}a{color:var(--accent)}a:hover{color:var(--accent-dark)}
+    .shell{width:min(1080px,calc(100% - 32px));margin:0 auto}.site-header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.9);border-bottom:1px solid rgba(223,229,238,.9);backdrop-filter:blur(12px)}.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{color:var(--ink);font-size:1.05rem;font-weight:780;letter-spacing:-.01em;text-decoration:none}.nav-links{display:flex;align-items:center;gap:20px;font-size:.94rem}.nav-links a{color:var(--muted);font-weight:680;text-decoration:none}.nav-links a[aria-current="page"]{color:var(--accent)}
+    .hero{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(250px,.55fr);gap:48px;align-items:center;min-height:550px;padding:70px 0}.eyebrow{margin:0 0 12px;color:var(--accent);font-size:.78rem;font-weight:820;letter-spacing:.13em;text-transform:uppercase}h1{margin:0;font-size:clamp(3rem,8vw,5.7rem);line-height:.96;letter-spacing:-.065em}.hero-copy{max-width:710px;margin:24px 0 0;color:var(--muted);font-size:clamp(1.04rem,2vw,1.22rem)}.actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:28px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:45px;padding:0 17px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--ink);font-size:.9rem;font-weight:740;text-decoration:none}.button.primary{border-color:var(--accent);background:var(--accent);color:#fff}.button.primary:hover{border-color:var(--accent-dark);background:var(--accent-dark);color:#fff}
+    .profile-card{padding:24px;border:1px solid var(--line);border-radius:24px;background:var(--paper);box-shadow:var(--shadow)}.monogram{display:grid;width:86px;height:86px;place-items:center;border-radius:24px;background:linear-gradient(145deg,#3157d5,#7892ee);color:#fff;font-size:1.75rem;font-weight:830;letter-spacing:-.04em}.profile-card h2{margin:20px 0 3px;font-size:1.15rem}.profile-card p{margin:0;color:var(--muted);font-size:.91rem}.profile-links{display:grid;gap:8px;margin-top:18px}.profile-links a{padding:10px 12px;border-radius:10px;background:var(--wash);color:var(--ink);font-size:.86rem;font-weight:680;text-decoration:none}
+    .section{padding:70px 0;border-top:1px solid var(--line)}.section-heading{display:grid;grid-template-columns:minmax(180px,.4fr) minmax(0,1fr);gap:42px;align-items:start;margin-bottom:30px}.section h2{margin:0;font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.1;letter-spacing:-.04em}.section-lead{max-width:720px;margin:0;color:var(--muted);font-size:1.04rem}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.card{min-height:190px;padding:22px;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper)}.card .number{color:var(--accent);font-size:.75rem;font-weight:820;letter-spacing:.1em}.card h3{margin:28px 0 8px;font-size:1.08rem;line-height:1.3}.card p{margin:0;color:var(--muted);font-size:.9rem}.feature{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center;padding:28px;border:1px solid #cfd8ee;border-radius:24px;background:linear-gradient(145deg,#fff,#edf1ff);box-shadow:var(--shadow)}.feature h3{margin:0 0 7px;font-size:1.35rem;letter-spacing:-.02em}.feature p{margin:0;color:var(--muted)}
+    .service-list{display:flex;flex-wrap:wrap;gap:9px;margin:18px 0 0}.service-list span{padding:8px 11px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--muted);font-size:.84rem;font-weight:680}.resources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.resource{display:flex;min-height:115px;flex-direction:column;justify-content:space-between;padding:21px;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);color:var(--ink);text-decoration:none}.resource strong{font-size:1.04rem}.resource span{color:var(--muted);font-size:.86rem}.site-footer{padding:30px 0 46px;border-top:1px solid var(--line);color:var(--muted);font-size:.86rem}.footer-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:15px}
+    @media(max-width:820px){.hero{grid-template-columns:1fr;min-height:auto}.profile-card{max-width:470px}.section-heading{grid-template-columns:1fr;gap:16px}.grid{grid-template-columns:1fr}}@media(max-width:600px){.shell{width:min(100% - 22px,1080px)}.hero{padding:55px 0;gap:32px}.feature{grid-template-columns:1fr}.resources{grid-template-columns:1fr}.nav-links{gap:13px;font-size:.84rem}.nav-links a[href="#academic-service"]{display:none}}
   </style>
 </head>
 <body>
@@ -72,6 +23,7 @@
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="index.html" aria-current="page">Home</a>
         <a href="publications.html">Publications</a>
+        <a href="#academic-service">Academic Service</a>
         <a href="resume.html">CV</a>
       </nav>
     </div>
@@ -85,16 +37,17 @@
         <p class="hero-copy">Ph.D. student in Statistics & Analytics at Central Michigan University. My research focuses on statistical methods, algorithmic fairness, human–AI decision systems, and data-informed research.</p>
         <div class="actions">
           <a class="button primary" href="publications.html">View publications</a>
+          <a class="button" href="#academic-service">Academic service</a>
           <a class="button" href="mailto:fan2h@cmich.edu">Email me</a>
         </div>
       </div>
-
       <aside class="profile-card" aria-label="Profile summary">
         <div class="monogram" aria-hidden="true">HF</div>
         <h2>Hairu Fan</h2>
         <p>Ph.D. Student<br>Statistics & Analytics<br>Central Michigan University</p>
         <div class="profile-links">
           <a href="publications.html">Publication archive →</a>
+          <a href="#academic-service">Academic service →</a>
           <a href="resume.html">Online CV →</a>
           <a href="https://www.linkedin.com/in/hairu-fan-383791265/" target="_blank" rel="noopener">LinkedIn →</a>
           <a href="https://github.com/HairuFan" target="_blank" rel="noopener">GitHub →</a>
@@ -104,10 +57,7 @@
 
     <section class="section">
       <div class="shell">
-        <div class="section-heading">
-          <h2>Research</h2>
-          <p class="section-lead">I work across theoretical and applied statistics, responsible AI, and information systems, with an emphasis on transparent empirical evidence and actionable methodological frameworks.</p>
-        </div>
+        <div class="section-heading"><h2>Research</h2><p class="section-lead">I work across theoretical and applied statistics, responsible AI, and information systems, with an emphasis on transparent empirical evidence and actionable methodological frameworks.</p></div>
         <div class="grid">
           <article class="card"><span class="number">01</span><h3>Statistics & Analytics</h3><p>Statistical inference, simulation, empirical analysis, and reproducible data workflows.</p></article>
           <article class="card"><span class="number">02</span><h3>Responsible AI</h3><p>Algorithmic fairness, bias diagnosis, trust, and evidence-based intervention decisions.</p></article>
@@ -118,10 +68,7 @@
 
     <section class="section">
       <div class="shell">
-        <div class="section-heading">
-          <h2>Publications</h2>
-          <p class="section-lead">A searchable publication archive with direct links, APA citations, and copy-ready BibTeX. The archive is maintained as structured data so new work can be added without redesigning the website.</p>
-        </div>
+        <div class="section-heading"><h2>Publications</h2><p class="section-lead">A searchable publication archive with direct links, APA citations, and copy-ready BibTeX.</p></div>
         <div class="feature">
           <div><h3>Current publication list</h3><p>Journal articles, conference papers, TREOs, preprints, and in-press work.</p></div>
           <a class="button primary" href="publications.html">Browse all publications</a>
@@ -129,33 +76,36 @@
       </div>
     </section>
 
+    <section class="section" id="academic-service">
+      <div class="shell">
+        <div class="section-heading"><h2>Academic Service</h2><p class="section-lead">Conference peer reviewer across statistics, artificial intelligence, information systems, HCI, and trustworthy computing.</p></div>
+        <div class="feature">
+          <div>
+            <h3>Peer Review Experience</h3>
+            <p>12 reviewer appointments across international conferences, 2025–2026.</p>
+            <div class="service-list" aria-label="Selected conferences">
+              <span>HICSS</span><span>ICMI</span><span>ICIPS</span><span>ECIS</span><span>IEEE SaTC</span><span>ACM IDC</span><span>C&amp;C</span><span>AMCIS</span><span>ISBCom</span><span>PACIS</span><span>ICIS</span>
+            </div>
+          </div>
+          <a class="button primary" href="https://github.com/HairuFan/hairufan.github.io/blob/main/academic-service/README.md" target="_blank" rel="noopener">View reviewer record</a>
+        </div>
+      </div>
+    </section>
+
     <section class="section">
       <div class="shell">
-        <div class="section-heading">
-          <h2>Resources</h2>
-          <p class="section-lead">Selected materials currently hosted on this academic website.</p>
-        </div>
+        <div class="section-heading"><h2>Resources</h2><p class="section-lead">Selected materials currently hosted on this academic website.</p></div>
         <div class="resources">
-          <a class="resource" href="JSM2025_Slides.pdf" target="_blank" rel="noopener">
-            <strong>JSM 2025 Presentation Slides</strong>
-            <span>From Bias to Balance: A Data-Driven Approach to Fair Recruitment Practices →</span>
-          </a>
-          <a class="resource" href="resume.html">
-            <strong>Online Curriculum Vitae</strong>
-            <span>View the current web-based CV →</span>
-          </a>
+          <a class="resource" href="JSM2025_Slides.pdf" target="_blank" rel="noopener"><strong>JSM 2025 Presentation Slides</strong><span>From Bias to Balance: A Data-Driven Approach to Fair Recruitment Practices →</span></a>
+          <a class="resource" href="resume.html"><strong>Online Curriculum Vitae</strong><span>View the current web-based CV →</span></a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="shell footer-row">
-      <span>© <span id="year"></span> Hairu Fan</span>
-      <span><a href="mailto:fan2h@cmich.edu">fan2h@cmich.edu</a></span>
-    </div>
+    <div class="shell footer-row"><span>© <span id="year"></span> Hairu Fan</span><span><a href="mailto:fan2h@cmich.edu">fan2h@cmich.edu</a></span></div>
   </footer>
-
   <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
