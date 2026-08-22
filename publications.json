@@ -3,6 +3,19 @@
   "sourceDocument": "https://docs.google.com/document/d/1_ZIhsAccuYwDXxsDFC9TzmV-Wu2KU_EqAGTQ25GFkkg/edit?usp=sharing",
   "publications": [
     {
+      "id": "cars-intrusion-detection-2026",
+      "type": "Conference Paper",
+      "status": "Accepted",
+      "year": 2026,
+      "title": "Real-Time Network Intrusion Detection Using Machine Learning and Deep Neural Networks: A Leakage-Verified Comparative Study of XGBoost, CNN, and LSTM on CICIDS2017",
+      "authors": "Liu, M., Liu, T., Fan, H., Vulli, S., & Huang, Z.",
+      "venue": "IEEE Cyber Awareness and Research Symposium (CARS 2026)",
+      "apa": "Liu, M., Liu, T., Fan, H., Vulli, S., & Huang, Z. (2026). Real-time network intrusion detection using machine learning and deep neural networks: A leakage-verified comparative study of XGBoost, CNN, and LSTM on CICIDS2017 [Accepted conference paper]. IEEE Cyber Awareness and Research Symposium (CARS 2026).",
+      "url": "https://ieee-cars.org/authors",
+      "linkLabel": "Conference",
+      "bibtex": "@inproceedings{LiuLiuFanVulliHuang2026CARS,\n  author    = {Liu, Ming and Liu, Tianyou and Fan, Hairu and Vulli, Srinivas and Huang, Zhenyu},\n  title     = {Real-Time Network Intrusion Detection Using Machine Learning and Deep Neural Networks: A Leakage-Verified Comparative Study of {XGBoost}, {CNN}, and {LSTM} on {CICIDS2017}},\n  booktitle = {2026 IEEE Cyber Awareness and Research Symposium (CARS)},\n  year      = {2026},\n  note      = {Accepted for presentation; Paper ID: 1571325002},\n  url       = {https://ieee-cars.org/authors}\n}"
+    },
+    {
       "id": "fairness-actionability-arxiv-2026",
       "type": "Preprint",
       "status": "Preprint",
