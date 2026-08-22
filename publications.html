@@ -43,7 +43,7 @@
       <div class="stats">
         <div class="stat"><strong id="total-count">—</strong><span>Total items</span></div>
         <div class="stat"><strong id="published-count">—</strong><span>Published</span></div>
-        <div class="stat"><strong id="active-count">—</strong><span>In press or preprint</span></div>
+        <div class="stat"><strong id="active-count">—</strong><span>In press, accepted, or preprint</span></div>
       </div>
     </section>
 
@@ -75,7 +75,8 @@
     function render(){const items=filtered();document.getElementById('results-count').textContent=`Showing ${items.length} of ${state.publications.length} items`;list.innerHTML='';if(!items.length){list.innerHTML='<div class="empty">No publications match the current search or filter.</div>';return}items.forEach(p=>{const card=document.createElement('article');card.className='publication';card.innerHTML=`<div class="topline"><span class="tag">${p.type}</span><span class="tag ${slug(p.status)}">${p.status}</span><span class="year">${p.year}</span></div><h2>${p.title}</h2><p class="authors">${p.authors}</p><p class="venue">${p.venue}</p><div class="publication-actions"><a class="small-action" href="${p.url}" target="_blank" rel="noopener">${p.linkLabel||'Open paper'}</a><button class="small-action copy-apa">Copy APA</button><button class="small-action copy-bib">Copy BibTeX</button></div><details><summary>View BibTeX</summary><pre></pre></details>`;card.querySelector('pre').textContent=p.bibtex;card.querySelector('.copy-apa').onclick=()=>copyText(p.apa,'APA citation');card.querySelector('.copy-bib').onclick=()=>copyText(p.bibtex,'BibTeX');list.appendChild(card)})}
     document.getElementById('search').addEventListener('input',e=>{state.query=e.target.value;render()});
 
-    fetch('publications.json').then(r=>{if(!r.ok)throw new Error('Unable to load publication data');return r.json()}).then(data=>{state.publications=data.publications||[];document.getElementById('source-link').href=data.sourceDocument||'#';document.getElementById('updated-date').textContent=data.lastUpdated?`Updated ${data.lastUpdated}`:'';document.getElementById('total-count').textContent=state.publications.length;document.getElementById('published-count').textContent=state.publications.filter(p=>p.status==='Published').length;document.getElementById('active-count').textContent=state.publications.filter(p=>p.status!=='Published').length;renderFilters();render()}).catch(error=>{list.innerHTML=`<div class="empty">${error.message}</div>`});
+    const publicationDataURL=`publications.json?v=${Date.now()}`;
+    fetch(publicationDataURL,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Unable to load publication data');return r.json()}).then(data=>{state.publications=data.publications||[];document.getElementById('source-link').href=data.sourceDocument||'#';document.getElementById('updated-date').textContent=data.lastUpdated?`Updated ${data.lastUpdated}`:'';document.getElementById('total-count').textContent=state.publications.length;document.getElementById('published-count').textContent=state.publications.filter(p=>p.status==='Published').length;document.getElementById('active-count').textContent=state.publications.filter(p=>p.status!=='Published').length;renderFilters();render()}).catch(error=>{list.innerHTML=`<div class="empty">${error.message}</div>`});
   </script>
 </body>
 </html>
