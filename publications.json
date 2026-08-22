@@ -1,7 +1,20 @@
 {
-  "lastUpdated": "2026-08-05",
+  "lastUpdated": "2026-08-22",
   "sourceDocument": "https://docs.google.com/document/d/1_ZIhsAccuYwDXxsDFC9TzmV-Wu2KU_EqAGTQ25GFkkg/edit?usp=sharing",
   "publications": [
+    {
+      "id": "fairness-actionability-arxiv-2026",
+      "type": "Preprint",
+      "status": "Preprint",
+      "year": 2026,
+      "title": "What Makes a Fairness Gap Actionable? Statistical Actionability for Responsible AI Deployment",
+      "authors": "Fan, H., & Wang, S.",
+      "venue": "arXiv:2608.16912 [cs.CY]",
+      "apa": "Fan, H., & Wang, S. (2026). What makes a fairness gap actionable? Statistical actionability for responsible AI deployment [Preprint]. arXiv. https://doi.org/10.48550/arXiv.2608.16912",
+      "url": "https://arxiv.org/abs/2608.16912",
+      "linkLabel": "arXiv",
+      "bibtex": "@misc{FanWang2026StatisticalActionability,\n  author        = {Fan, Hairu and Wang, Shiyuan},\n  title         = {What Makes a Fairness Gap Actionable? Statistical Actionability for Responsible AI Deployment},\n  year          = {2026},\n  eprint        = {2608.16912},\n  archivePrefix = {arXiv},\n  primaryClass  = {cs.CY},\n  doi           = {10.48550/arXiv.2608.16912},\n  url           = {https://arxiv.org/abs/2608.16912}\n}"
+    },
     {
       "id": "fed-rate-cuts-2026",
       "type": "Journal Article",
