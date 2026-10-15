@@ -1,7 +1,20 @@
 {
-  "lastUpdated": "2026-08-22",
+  "lastUpdated": "2026-10-15",
   "sourceDocument": "https://docs.google.com/document/d/1_ZIhsAccuYwDXxsDFC9TzmV-Wu2KU_EqAGTQ25GFkkg/edit?usp=sharing",
   "publications": [
+    {
+      "id": "human-ai-disparity-distortion-iclr-2027",
+      "type": "Conference Paper",
+      "status": "Under review",
+      "year": 2027,
+      "title": "Human–AI Disparity Distortion: A Component-Referenced Diagnostic for Hybrid Decision Systems",
+      "authors": "Fan, H., & Wang, S.",
+      "venue": "International Conference on Learning Representations (ICLR 2027)",
+      "apa": "Fan, H., & Wang, S. (2027). Human–AI disparity distortion: A component-referenced diagnostic for hybrid decision systems [Manuscript submitted for review]. International Conference on Learning Representations (ICLR 2027).",
+      "url": "https://iclr.cc/",
+      "linkLabel": "ICLR",
+      "bibtex": "@inproceedings{FanWang2027HumanAIDisparityDistortion,\n  author    = {Fan, Hairu and Wang, Shiyuan},\n  title     = {Human--AI Disparity Distortion: A Component-Referenced Diagnostic for Hybrid Decision Systems},\n  booktitle = {International Conference on Learning Representations (ICLR)},\n  year      = {2027},\n  note      = {Under review},\n  url       = {https://iclr.cc/}\n}"
+    },
     {
       "id": "cars-intrusion-detection-2026",
       "type": "Conference Paper",
