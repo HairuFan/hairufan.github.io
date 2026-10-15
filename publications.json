@@ -3,6 +3,19 @@
   "sourceDocument": "https://docs.google.com/document/d/1_ZIhsAccuYwDXxsDFC9TzmV-Wu2KU_EqAGTQ25GFkkg/edit?usp=sharing",
   "publications": [
     {
+      "id": "strategic-invisibility-jms",
+      "type": "Journal Article",
+      "status": "Under review",
+      "year": 2026,
+      "title": "Strategic Invisibility: Relocating the Organizational Front Stage in Platform-Mediated Markets",
+      "authors": "Sharma, G. D., Kharbanda, A., & Fan, H.",
+      "venue": "Journal of Management Studies (submitted)",
+      "apa": "Sharma, G. D., Kharbanda, A., & Fan, H. (2026). Strategic invisibility: Relocating the organizational front stage in platform-mediated markets [Manuscript submitted for publication]. Journal of Management Studies.",
+      "url": "https://onlinelibrary.wiley.com/journal/14676486",
+      "linkLabel": "Journal",
+      "bibtex": "@unpublished{SharmaKharbandaFan2026StrategicInvisibility,\n  author = {Sharma, Gagan Deep and Kharbanda, Aeshna and Fan, Hairu},\n  title  = {Strategic Invisibility: Relocating the Organizational Front Stage in Platform-Mediated Markets},\n  year   = {2026},\n  note   = {Manuscript submitted to Journal of Management Studies; under review}\n}"
+    },
+    {
       "id": "human-ai-disparity-distortion-iclr-2027",
       "type": "Conference Paper",
       "status": "Under review",
