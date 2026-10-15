@@ -3,6 +3,19 @@
   "sourceDocument": "https://docs.google.com/document/d/1_ZIhsAccuYwDXxsDFC9TzmV-Wu2KU_EqAGTQ25GFkkg/edit?usp=sharing",
   "publications": [
     {
+      "id": "peer-review-bias-edi",
+      "type": "Journal Article",
+      "status": "In press",
+      "year": 2026,
+      "title": "Hidden or Undetected? Quantifying the Boundary Between Structural Bias and Statistical Noise in Peer Review",
+      "authors": "Fan, H., Wu, F., Liang, C., & Zhao, C.",
+      "venue": "Equality, Diversity and Inclusion",
+      "apa": "Fan, H., Wu, F., Liang, C., & Zhao, C. (in press). Hidden or undetected? Quantifying the boundary between structural bias and statistical noise in peer review. Equality, Diversity and Inclusion.",
+      "url": "https://www.emeraldgrouppublishing.com/journal/edi",
+      "linkLabel": "Journal",
+      "bibtex": "@article{FanWuLiangZhao2026PeerReviewBias,\n  author  = {Fan, Hairu and Wu, Fan and Liang, Chen and Zhao, Chuqing},\n  title   = {Hidden or Undetected? Quantifying the Boundary Between Structural Bias and Statistical Noise in Peer Review},\n  journal = {Equality, Diversity and Inclusion},\n  year    = {2026},\n  note    = {In press}\n}"
+    },
+    {
       "id": "strategic-invisibility-jms",
       "type": "Journal Article",
       "status": "Under review",
