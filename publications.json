@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-10-15",
+  "lastUpdated": "2026-10-17",
   "sourceDocument": "https://docs.google.com/document/d/1_ZIhsAccuYwDXxsDFC9TzmV-Wu2KU_EqAGTQ25GFkkg/edit?usp=sharing",
   "publications": [
     {
       "id": "peer-review-bias-edi",
       "type": "Journal Article",
-      "status": "In press",
+      "status": "Published",
       "year": 2026,
       "title": "Hidden or Undetected? Quantifying the Boundary Between Structural Bias and Statistical Noise in Peer Review",
       "authors": "Fan, H., Wu, F., Liang, C., & Zhao, C.",
-      "venue": "Equality, Diversity and Inclusion",
-      "apa": "Fan, H., Wu, F., Liang, C., & Zhao, C. (in press). Hidden or undetected? Quantifying the boundary between structural bias and statistical noise in peer review. Equality, Diversity and Inclusion.",
-      "url": "https://www.emeraldgrouppublishing.com/journal/edi",
-      "linkLabel": "Journal",
-      "bibtex": "@article{FanWuLiangZhao2026PeerReviewBias,\n  author  = {Fan, Hairu and Wu, Fan and Liang, Chen and Zhao, Chuqing},\n  title   = {Hidden or Undetected? Quantifying the Boundary Between Structural Bias and Statistical Noise in Peer Review},\n  journal = {Equality, Diversity and Inclusion},\n  year    = {2026},\n  note    = {In press}\n}"
+      "venue": "Equality, Diversity and Inclusion: An International Journal, Vol. ahead-of-print, No. ahead-of-print",
+      "apa": "Fan, H., Wu, F., Liang, C., & Zhao, C. (2026). Hidden or undetected? Quantifying the boundary between structural bias and statistical noise in peer review. Equality, Diversity and Inclusion: An International Journal. Advance online publication. https://doi.org/10.1108/EDI-12-2025-0829",
+      "url": "https://doi.org/10.1108/EDI-12-2025-0829",
+      "linkLabel": "DOI",
+      "bibtex": "@article{FanWuLiangZhao2026PeerReviewBias,\n  author  = {Fan, Hairu and Wu, Fan and Liang, Chen and Zhao, Chuqing},\n  title   = {Hidden or Undetected? Quantifying the Boundary Between Structural Bias and Statistical Noise in Peer Review},\n  journal = {Equality, Diversity and Inclusion: An International Journal},\n  year    = {2026},\n  note    = {Advance online publication; Vol. ahead-of-print, No. ahead-of-print},\n  doi     = {10.1108/EDI-12-2025-0829},\n  url     = {https://doi.org/10.1108/EDI-12-2025-0829}\n}"
     },
     {
       "id": "strategic-invisibility-jms",
