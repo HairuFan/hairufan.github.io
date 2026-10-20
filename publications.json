@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-17",
+  "lastUpdated": "2026-10-19",
   "sourceDocument": "https://docs.google.com/document/d/1_ZIhsAccuYwDXxsDFC9TzmV-Wu2KU_EqAGTQ25GFkkg/edit?usp=sharing",
   "publications": [
     {
@@ -9,11 +9,11 @@
       "year": 2026,
       "title": "Hidden or Undetected? Quantifying the Boundary Between Structural Bias and Statistical Noise in Peer Review",
       "authors": "Fan, H., Wu, F., Liang, C., & Zhao, C.",
-      "venue": "Equality, Diversity and Inclusion: An International Journal, Vol. ahead-of-print, No. ahead-of-print",
-      "apa": "Fan, H., Wu, F., Liang, C., & Zhao, C. (2026). Hidden or undetected? Quantifying the boundary between structural bias and statistical noise in peer review. Equality, Diversity and Inclusion: An International Journal. Advance online publication. https://doi.org/10.1108/EDI-12-2025-0829",
+      "venue": "Equality, Diversity and Inclusion: An International Journal, pp. 1–20 (online publication, October 19, 2026)",
+      "apa": "Fan, H., Wu, F., Liang, C., & Zhao, C. (2026). Hidden or undetected? Quantifying the boundary between structural bias and statistical noise in peer review. *Equality, Diversity and Inclusion: An International Journal*, 1–20. https://doi.org/10.1108/EDI-12-2025-0829",
       "url": "https://doi.org/10.1108/EDI-12-2025-0829",
       "linkLabel": "DOI",
-      "bibtex": "@article{FanWuLiangZhao2026PeerReviewBias,\n  author  = {Fan, Hairu and Wu, Fan and Liang, Chen and Zhao, Chuqing},\n  title   = {Hidden or Undetected? Quantifying the Boundary Between Structural Bias and Statistical Noise in Peer Review},\n  journal = {Equality, Diversity and Inclusion: An International Journal},\n  year    = {2026},\n  note    = {Advance online publication; Vol. ahead-of-print, No. ahead-of-print},\n  doi     = {10.1108/EDI-12-2025-0829},\n  url     = {https://doi.org/10.1108/EDI-12-2025-0829}\n}"
+      "bibtex": "@article{FanWuLiangZhao2026PeerReviewBias,\n  author  = {Fan, Hairu and Wu, Fan and Liang, Chen and Zhao, Chuqing},\n  title   = {Hidden or Undetected? Quantifying the Boundary Between Structural Bias and Statistical Noise in Peer Review},\n  journal = {Equality, Diversity and Inclusion: An International Journal},\n  year    = {2026},\n  month   = oct,\n  day     = {19},\n  pages   = {1--20},\n  doi     = {10.1108/EDI-12-2025-0829},\n  url     = {https://doi.org/10.1108/EDI-12-2025-0829},\n  note    = {Published online October 19, 2026; volume and issue not yet assigned}\n}"
     },
     {
       "id": "strategic-invisibility-jms",
