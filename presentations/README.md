@@ -9,6 +9,7 @@ _Last updated: October 25, 2026_
 ### Hybrid Bias Distortion in AI-Assisted Occupation Classification: A Pilot Study
 
 **IEEE 4th International Conference on Artificial Intelligence, Blockchain, and Internet of Things (AIBThings 2026)**  
+**Conference website:** https://www.aibthings.com/  
 **Format:** Conference presentation  
 **Conference dates:** September 5–6, 2026  
 **Paper ID:** AIBThings2026-164
@@ -22,6 +23,7 @@ Presented a pilot study investigating how bias and disparities can emerge in AI-
 ### From Attribution to Disparity: A Textual Pathway Analysis of Bias in BERT-Based Occupation Classification
 
 **IEEE 4th International Conference on Artificial Intelligence, Blockchain, and Internet of Things (AIBThings 2026)**  
+**Conference website:** https://www.aibthings.com/  
 **Format:** Conference presentation  
 **Conference dates:** September 5–6, 2026  
 **Paper ID:** AIBThings2026-154
