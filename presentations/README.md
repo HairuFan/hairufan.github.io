@@ -6,6 +6,32 @@ _Last updated: October 25, 2026_
 
 ## 2026
 
+### Hybrid Bias Distortion in AI-Assisted Occupation Classification: A Pilot Study
+
+**IEEE 4th International Conference on Artificial Intelligence, Blockchain, and Internet of Things (AIBThings 2026)**  
+**Format:** Conference presentation  
+**Conference dates:** September 5–6, 2026  
+**Paper ID:** AIBThings2026-164
+
+Presented a pilot study investigating how bias and disparities can emerge in AI-assisted occupation classification.
+
+[CMU Official News Coverage](https://www.cmich.edu/news/details/cmu-ph.d.-student-presents-research-on-ai-bias-and-fairness-at-international-conference)
+
+---
+
+### From Attribution to Disparity: A Textual Pathway Analysis of Bias in BERT-Based Occupation Classification
+
+**IEEE 4th International Conference on Artificial Intelligence, Blockchain, and Internet of Things (AIBThings 2026)**  
+**Format:** Conference presentation  
+**Conference dates:** September 5–6, 2026  
+**Paper ID:** AIBThings2026-154
+
+Presented research examining textual pathways through which model attribution patterns relate to disparities in BERT-based occupation classification.
+
+[CMU Official News Coverage](https://www.cmich.edu/news/details/cmu-ph.d.-student-presents-research-on-ai-bias-and-fairness-at-international-conference)
+
+---
+
 ### Balancing the Bosses: Contingent Complementarity Between Human and Algorithmic Control in Gig Platforms
 
 **Americas Conference on Information Systems (AMCIS 2026)**  
