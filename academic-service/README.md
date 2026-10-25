@@ -2,10 +2,11 @@
 
 _Last updated: October 25, 2026_
 
-## Conference Peer Reviewer (2025–2026)
+## Conference Peer Reviewer (2025–2027)
 
 | Conference | Role and review focus | Review period |
 |---|---|---|
+| ACM Conference on Fairness, Accountability, and Transparency (ACM FAccT 2027) | Conference Peer Reviewer (service appointment) | Oct 2026–Feb 2027 |
 | Hawaii International Conference on System Sciences (HICSS-59), 2026 | Peer Reviewer — AI and Digital Discrimination Minitrack | 2025 review cycle |
 | Hawaii International Conference on System Sciences (HICSS-60), 2027 | Peer Reviewer | Jun–Aug 2026 |
 | IEEE International Conference on Computing and Machine Intelligence (ICMI 2026) | Peer Reviewer | Oct–Nov 2025 |
@@ -20,6 +21,8 @@ _Last updated: October 25, 2026_
 | International Conference on Information Systems (ICIS 2026) | Peer Reviewer | Jun 2026 |
 | IEEE International Conference on Artificial Intelligence, Blockchain and Internet of Things (AIBThings 2026) | Peer Reviewer | Jun–Jul 2026 |
 | International Conference on Web Information Systems Engineering (WISE 2026) | Peer Reviewer | Jun–Jul 2026 |
+
+**Conference information:** [ACM FAccT](https://facctconference.org/)
 
 ## Book Proposal Review (2026)
 
