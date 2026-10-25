@@ -47,9 +47,9 @@ Presented research on the identification and evaluation of algorithmic bias in A
 
 Presented a data-driven framework for evaluating and addressing fairness concerns in AI-assisted recruitment practices.
 
-[View JSM 2025 program record](https://ww3.aievolution.com/JSMAnnual2025/Events/viewEv?ev=2897) · [View CMU official coverage](https://www.cmich.edu/news/details/cmu-graduate-student-tackles-hiring-bias-at-national-statistics-conference)
+[View CMU official news coverage](https://www.cmich.edu/news/details/cmu-graduate-student-tackles-hiring-bias-at-national-statistics-conference)
 
-*If the conference program portal is unavailable, the CMU article independently documents this presentation.*
+*CMU's official article identifies the JSM 2025 talk, its title, and the August 5 presentation date. The former conference-program link has been removed because its availability could not be verified.*
 
 ---
 
