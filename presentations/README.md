@@ -2,7 +2,7 @@
 
 _Selected conference talks, university research presentations, seminars, and invited presentations on responsible AI, algorithmic fairness, financial analytics, and digital-platform governance._
 
-_Last updated: August 6, 2026_
+_Last updated: October 25, 2026_
 
 ## 2026
 
@@ -47,7 +47,9 @@ Presented research on the identification and evaluation of algorithmic bias in A
 
 Presented a data-driven framework for evaluating and addressing fairness concerns in AI-assisted recruitment practices.
 
-[View program record](https://ww3.aievolution.com/JSMAnnual2025/Events/viewEv?ev=2897)
+[View JSM 2025 program record](https://ww3.aievolution.com/JSMAnnual2025/Events/viewEv?ev=2897) · [View CMU official coverage](https://www.cmich.edu/news/details/cmu-graduate-student-tackles-hiring-bias-at-national-statistics-conference)
+
+*If the conference program portal is unavailable, the CMU article independently documents this presentation.*
 
 ---
 
