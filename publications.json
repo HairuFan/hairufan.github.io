@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-12",
+  "lastUpdated": "2026-11-19",
   "sourceDocument": "https://docs.google.com/document/d/1_ZIhsAccuYwDXxsDFC9TzmV-Wu2KU_EqAGTQ25GFkkg/edit?usp=sharing",
   "publications": [
     {
@@ -136,15 +136,15 @@
     {
       "id": "attribution-disparity-aibthings-2026",
       "type": "Conference Paper",
-      "status": "In press",
+      "status": "Published",
       "year": 2026,
-      "title": "From attribution to disparity: A textual pathway analysis of bias in BERT-based occupation classification",
-      "authors": "Fan, H., & Wang, S.",
-      "venue": "2026 IEEE 4th International Conference on Artificial Intelligence, Blockchain, and Internet of Things (AIBThings)",
-      "apa": "Fan, H., & Wang, S. (in press). From attribution to disparity: A textual pathway analysis of bias in BERT-based occupation classification. In 2026 IEEE 4th International Conference on Artificial Intelligence, Blockchain, and Internet of Things (AIBThings). IEEE.",
-      "url": "https://aibthings.com/",
-      "linkLabel": "Conference",
-      "bibtex": "@inproceedings{FanWang2026Attribution,\n  author    = {Fan, Hairu and Wang, Shiyuan},\n  title     = {From Attribution to Disparity: A Textual Pathway Analysis of Bias in {BERT}-Based Occupation Classification},\n  booktitle = {2026 IEEE 4th International Conference on Artificial Intelligence, Blockchain, and Internet of Things (AIBThings)},\n  publisher = {IEEE},\n  year      = {2026},\n  note      = {In press; Article identifier: AIBThings2026-154},\n  url       = {https://aibthings.com/}\n}"
+      "title": "From Attribution to Disparity: A Textual Pathway Analysis of Bias in BERT-Based Occupation Classification",
+      "authors": "Fan, H., Wang, S., & Liu, T.",
+      "venue": "2026 IEEE 4th International Conference on Artificial Intelligence, Blockchain, and Internet of Things (AIBThings), pp. 1–5",
+      "apa": "Fan, H., Wang, S., & Liu, T. (2026). From attribution to disparity: A textual pathway analysis of bias in BERT-based occupation classification. In *2026 IEEE 4th International Conference on Artificial Intelligence, Blockchain, and Internet of Things (AIBThings)* (pp. 1–5). IEEE. https://doi.org/10.1109/AIBThings71029.2026.11771356",
+      "url": "https://doi.org/10.1109/AIBThings71029.2026.11771356",
+      "linkLabel": "DOI",
+      "bibtex": "@INPROCEEDINGS{11771356,\n  author={Fan, Hairu and Wang, Shiyuan and Liu, Tianyou},\n  booktitle={2026 IEEE 4th International Conference on Artificial Intelligence, Blockchain, and Internet of Things (AIBThings)},\n  title={From Attribution to Disparity: A Textual Pathway Analysis of Bias in BERT-Based Occupation Classification},\n  year={2026},\n  pages={1-5},\n  keywords={Modeling;Printing;Biographies;Bit error rate;Equations;Testing;Artificial intelligence;Measurement;Aggregates;Labeling;algorithmic fairness;AI fairness;natural language processing;explainable AI;occupation classification;Bias-in-Bios;BERT;Integrated Gradients;attribution analysis;gender bias;textual pathway attribution},\n  doi={10.1109/AIBThings71029.2026.11771356}\n}"
     },
     {
       "id": "hybrid-bias-aibthings-2026",
