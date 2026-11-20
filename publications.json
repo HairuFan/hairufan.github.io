@@ -149,15 +149,15 @@
     {
       "id": "hybrid-bias-aibthings-2026",
       "type": "Conference Paper",
-      "status": "In press",
+      "status": "Published",
       "year": 2026,
-      "title": "Hybrid bias distortion in AI-assisted occupation classification: A pilot study",
+      "title": "Hybrid Bias Distortion in AI-Assisted Occupation Classification: A Pilot Study",
       "authors": "Fan, H., & Wang, S.",
       "venue": "2026 IEEE 4th International Conference on Artificial Intelligence, Blockchain, and Internet of Things (AIBThings)",
-      "apa": "Fan, H., & Wang, S. (in press). Hybrid bias distortion in AI-assisted occupation classification: A pilot study. In 2026 IEEE 4th International Conference on Artificial Intelligence, Blockchain, and Internet of Things (AIBThings). IEEE.",
-      "url": "https://aibthings.com/",
-      "linkLabel": "Conference",
-      "bibtex": "@inproceedings{FanWang2026Hybrid,\n  author    = {Fan, Hairu and Wang, Shiyuan},\n  title     = {Hybrid Bias Distortion in {AI}-Assisted Occupation Classification: A Pilot Study},\n  booktitle = {2026 IEEE 4th International Conference on Artificial Intelligence, Blockchain, and Internet of Things (AIBThings)},\n  publisher = {IEEE},\n  year      = {2026},\n  note      = {In press; Article identifier: AIBThings2026-164},\n  url       = {https://aibthings.com/}\n}"
+      "apa": "Fan, H., & Wang, S. (2026). Hybrid bias distortion in AI-assisted occupation classification: A pilot study. In *2026 IEEE 4th International Conference on Artificial Intelligence, Blockchain, and Internet of Things (AIBThings)*. IEEE. https://doi.org/10.1109/AIBThings71029.2026.11771374",
+      "url": "https://doi.org/10.1109/AIBThings71029.2026.11771374",
+      "linkLabel": "DOI",
+      "bibtex": "@INPROCEEDINGS{11771374,\n  author={Fan, Hairu and Wang, Shiyuan},\n  booktitle={2026 IEEE 4th International Conference on Artificial Intelligence, Blockchain, and Internet of Things (AIBThings)},\n  title={Hybrid Bias Distortion in AI-Assisted Occupation Classification: A Pilot Study},\n  year={2026},\n  publisher={IEEE},\n  doi={10.1109/AIBThings71029.2026.11771374}\n}"
     }
   ]
 }
