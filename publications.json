@@ -50,10 +50,8 @@
       "title": "Who Carries the Disparity? Trust-Conditioned Routing in Feedback-Enabled Human–AI Systems",
       "authors": "Fan, H., & Shu, M.",
       "venue": "ACM Conference on Fairness, Accountability, and Transparency (FAccT 2027), conference submission (under review)",
-      "apa": "Fan, H., & Shu, M. (2027). Who carries the disparity? Trust-conditioned routing in feedback-enabled human–AI systems [Manuscript submitted for publication]. ACM Conference on Fairness, Accountability, and Transparency (FAccT 2027). https://openreview.net/forum?id=NkJIb50Xrz",
-      "url": "https://openreview.net/forum?id=NkJIb50Xrz",
-      "linkLabel": "OpenReview",
-      "bibtex": "@unpublished{FanShu2027TrustConditionedRouting,\n  author = {Fan, Hairu and Shu, Min},\n  title = {Who Carries the Disparity? Trust-Conditioned Routing in Feedback-Enabled Human--AI Systems},\n  year = {2027},\n  note = {Submitted to ACM FAccT 2027; under review},\n  url = {https://openreview.net/forum?id=NkJIb50Xrz}\n}"
+      "apa": "Fan, H., & Shu, M. (2027). Who carries the disparity? Trust-conditioned routing in feedback-enabled human–AI systems [Manuscript submitted for publication]. ACM Conference on Fairness, Accountability, and Transparency (FAccT 2027).",
+      "bibtex": "@unpublished{FanShu2027TrustConditionedRouting,\n  author = {Fan, Hairu and Shu, Min},\n  title = {Who Carries the Disparity? Trust-Conditioned Routing in Feedback-Enabled Human--AI Systems},\n  year = {2027},\n  note = {Submitted to ACM FAccT 2027; under review}\n}"
     },
     {
       "id": "cars-intrusion-detection-2026",
